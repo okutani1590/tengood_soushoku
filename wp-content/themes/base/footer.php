@@ -1,7 +1,8 @@
 <footer class="footer">
     <div class="footer__inner flex">
         <div class="footer__inner--left">
-            <a href="" class="f-logo"><img src="/assets/images/common/logo.svg" alt="" /></a>
+            <a href="" class="f-logo"><img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg" alt="" /></a>
             <div class="company-info">
                 <span>運営会社：株式会社テングッド</span>
                 <a href=""> コーポレートサイト </a>
@@ -46,10 +47,11 @@
 
             <div class="footer__inner--sns">
                 <a href="">
-                    <img src="./assets/images/common/x_icon.svg" alt="x" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/x_icon.svg" alt="x" />
                 </a>
                 <a href="">
-                    <img src="./assets/images/common/facebook_icon.svg" alt="facebook" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/facebook_icon.svg"
+                        alt="facebook" />
                 </a>
             </div>
 
@@ -151,4 +153,5 @@ ScrollTrigger.create({
 </script>
 <?php wp_footer(); ?>
 </body>
+
 </html>

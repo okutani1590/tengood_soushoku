@@ -78,90 +78,90 @@
             <div class="scroll-infinity__wrap">
                 <ul class="scroll-infinity__list scroll-infinity__list--left">
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                 </ul>
                 <ul class="scroll-infinity__list scroll-infinity__list--left">
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
                             alt="" /></li>
                     <li class="scroll-infinity__item"><img
-                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
                             alt="" /></li>
                 </ul>
             </div>
@@ -600,12 +600,12 @@
             <h2 class="section__title en"><b>Media</b><small class="jp">採用やブランディングに関するお役立ち情報を公開しています</small></h2>
             <ul class="flex">
                 <li>
-                    <a href=""><img src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/x_icon.svg"
+                    <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/x_icon.svg"
                             alt="" />X <small>@tengood0901</small></a>
                 </li>
 
                 <li>
-                    <a href=""><img src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/cbo_icon.svg"
+                    <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/cbo_icon.svg"
                             alt="" />社内でブランディングを<br />推進するための情報サイト</a>
                 </li>
             </ul>

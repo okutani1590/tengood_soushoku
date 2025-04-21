@@ -12,7 +12,8 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <i class="header__logo"><img src="/assets/images/common/logo.svg" alt="RBD" /></i>
+            <i class="header__logo"><img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg" alt="RBD" /></i>
             <nav class="header__nav">
                 <ul>
                     <li><a href="#">課題</a></li>
@@ -22,10 +23,14 @@
                     <li><a href="#">フロー</a></li>
                     <li><a href="#">よくある質問</a></li>
                     <li class="sns_link">
-                        <a href="#"><img src="./assets/images/common/head_x_icon.svg" alt="" /></a>
+                        <a href="#"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_x_icon.svg"
+                                alt="" /></a>
                     </li>
                     <li class="sns_link">
-                        <a href="#"><img src="./assets/images/common/head_facebook_icon.svg" alt="" /></a>
+                        <a href="#"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_facebook_icon.svg"
+                                alt="" /></a>
                     </li>
                 </ul>
             </nav>
