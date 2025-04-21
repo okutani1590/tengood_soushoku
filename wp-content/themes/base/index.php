@@ -1,0 +1,661 @@
+<?php get_header(); ?>
+<div class="main__inner">
+    <!-- よくあるTOPスライド -->
+    <div class="fv" id="fv_top">
+        <div class="fv__container">
+            <div class="fv__container--left">
+                <h1>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_text.svg"
+                        alt="合説ブースは見た目が9割 採用の専門家が手掛ける 合説ブース装飾" />
+                </h1>
+
+                <div class="btn-box">
+                    <a href="" class="btn"> まずは無料相談する </a>
+                </div>
+            </div>
+
+            <div class="fv__container--right">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide01.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide02.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide03.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide01.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide02.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide03.jpg"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide05.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide06.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide05.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide06.jpg"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-infinity">
+            <div class="scroll-infinity__wrap">
+                <ul class="scroll-infinity__list scroll-infinity__list--left">
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                </ul>
+                <ul class="scroll-infinity__list scroll-infinity__list--left">
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
+                            alt="" /></li>
+                    <li class="scroll-infinity__item"><img
+                            src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
+                            alt="" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="problem" class="section section--problem">
+        <div class="section__container">
+            <h2 class="section__title en">
+                <b>Problem</b>
+                <small class="jp">こんな課題はありませんか？</small>
+            </h2>
+            <div class="flex">
+                <div class="flex__item">
+                    <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img01.jpg"
+                            alt="＜課題01＞学生にスルーされる…" />
+                        <figcaption>
+                            <span>＜課題01＞ 学生にスルーされる…</span>
+                            <h3>学生が足を止めて<br /><b>話を聞きたくなるブース</b>にしたい</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="flex__item">
+                    <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img02.jpg"
+                            alt="どうせ作るなら…" />
+                        <figcaption>
+                            <span>＜課題02＞ どうせ作るなら…</span>
+                            <h3>クリエイティブに<b>こだわりたい</b></h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="flex__item">
+                    <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img03.jpg"
+                            alt="ブース装飾に時間がかかる…" />
+                        <figcaption>
+                            <span>＜課題03＞ ブース装飾に時間がかかる…</span>
+                            <h3><b>採用オペレーションに集中</b>したい</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="flex__item">
+                    <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img04.jpg"
+                            alt="自社の世界観が伝わらない…" />
+                        <figcaption>
+                            <span>＜課題04＞ 自社の世界観が伝わらない…</span>
+                            <h3>
+                                学生に<br />
+                                <b>自社の魅力</b>を届けたい
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="flex__item">
+                    <figure>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img05.jpg"
+                            alt="人事側での制作が難しい" />
+                        <figcaption>
+                            <span>＜課題05＞ 人事側での制作が難しい</span>
+                            <h3><b>何を伝えれば</b><br /><b>効果的か</b>わからない</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature" class="section section--feature">
+        <div class="section__container sticky" id="feature01">
+            <div class="inner">
+                <h2 class="section__title--line">Feature01</h2>
+                <div class="text-box">
+                    <span class="en">Professional</span>
+                    <h3 class="section__title--sub">
+                        採用の専門家が担当！<br />
+                        説明会における採用ノウハウをもとにご提案します。
+                    </h3>
+                    <p class="desc">あらゆる業界の採用戦略に精通する採用の専門家が担当します。 <br
+                            class="pc" />お客さまのニーズやご要望をヒアリングし、採用コンサルタントとしての知見を活かしながら<br
+                            class="pc" />最適なご提案します。まずは気軽にご相談ください。</p>
+                    <div class="list">
+                        <span>＜在籍スタッフの主な保有資格＞</span>
+                        <p>
+                            一般社団法人総合経営管理協会認定 採用コンサルタント<br />
+                            一般社団法人採用定着支援協会 採用定着士<br />
+                            キャリアコンサルタント（国家資格）<br />
+                            CDA（キャリア・ディベロップメント・アドバイザー　など
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section__container sticky" id="feature02">
+            <div class="inner">
+                <h2 class="section__title--line">Feature02</h2>
+                <div class="text-box">
+                    <span class="en">Creator</span>
+                    <h3 class="section__title--sub">
+                        広告賞を受賞クリエイターが在籍！<br />
+                        学生が話を聞きたくなるデザインをご提案します。
+                    </h3>
+                    <p class="desc">
+                        確かな実績と豊富な経験をもつクリエイターが担当します。<br />単にロゴや社名をデザインに落とし込む提案はしません。<br />お客さまの独自の強みを表現し、採用の課題解決につながるデザインをご提案します。
+                    </p>
+                    <div class="list">
+                        <span>＜在籍スタッフの受賞歴＞</span>
+                        <p></p>
+                        <p>
+                            日本BtoB広告賞（経済産業大臣賞）／FCC賞／CCN賞／HCC賞／<br />
+                            宣伝会議賞／販促会議賞／ピンクリボンデザイン大賞／日経BP広告賞／<br />
+                            ビジネス広告大賞／日本産業広告賞／神戸新聞広告賞／CCN賞／<br />
+                            観光ポスターコンクール／AICHI AD AWARDSファイナリスト　など
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section__container sticky" id="feature03">
+            <div class="inner">
+                <h2 class="section__title--line">Feature03</h2>
+                <div class="text-box">
+                    <span class="en">Simple</span>
+                    <h3 class="section__title--sub">
+                        お客さまがご対応することは<br />
+                        ヒアリングとデザインの確認のみ！
+                    </h3>
+                    <p class="desc">
+                        まずは気軽にご連絡ください。<br />
+                        オンラインミーティングでご要望をお伺いし、デザインから納品までを一貫して対応します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ページネーション -->
+
+    <div class="pagination vertical">
+        <span data-target="feature01" class="dot"></span>
+        <span data-target="feature02" class="dot"></span>
+        <span data-target="feature03" class="dot"></span>
+    </div>
+
+    <div class="cta_area">
+        <div class="inner">
+            <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
+            <h2>ヒアリング面談登録</h2>
+            <p>メール・オンライン会議での無料相談も承ります。</p>
+            <a href="#" class="btn">まずは無料相談</a>
+        </div>
+    </div>
+
+    <section id="case" class="section section--case">
+        <div class="section__container">
+            <h2 class="section__title en">
+                <b>Case</b>
+                <small class="jp">導入事例</small>
+            </h2>
+
+            <div class="slider-box">
+                <div class="slide-type-case">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <article class="slide">
+                                    <div class="slide-media img-cover"><img
+                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="" /></div>
+                                    <div class="slide-content">
+                                        <div class="meta-box">
+                                            <span class="company-name">株式会社〇〇</span>
+                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                        </div>
+                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <ul class="case-tag">
+                                            <li class="case-tag--item"><span>メーカー</span></li>
+                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                        </ul>
+                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <a href="#" class="swiper-slide">
+                                <article class="slide">
+                                    <div class="slide-media img-cover"><img
+                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="" /></div>
+                                    <div class="slide-content">
+                                        <div class="meta-box">
+                                            <span class="company-name">株式会社〇〇</span>
+                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                        </div>
+                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <ul class="case-tag">
+                                            <li class="case-tag--item"><span>メーカー</span></li>
+                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                        </ul>
+                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <a href="#" class="swiper-slide">
+                                <article class="slide">
+                                    <div class="slide-media img-cover"><img
+                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="" /></div>
+                                    <div class="slide-content">
+                                        <div class="meta-box">
+                                            <span class="company-name">株式会社〇〇</span>
+                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                        </div>
+                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <ul class="case-tag">
+                                            <li class="case-tag--item"><span>メーカー</span></li>
+                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                        </ul>
+                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <a href="#" class="swiper-slide">
+                                <article class="slide">
+                                    <div class="slide-media img-cover"><img
+                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="" /></div>
+                                    <div class="slide-content">
+                                        <div class="meta-box">
+                                            <span class="company-name">株式会社〇〇</span>
+                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                        </div>
+                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <ul class="case-tag">
+                                            <li class="case-tag--item"><span>メーカー</span></li>
+                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                        </ul>
+                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <a href="#" class="swiper-slide">
+                                <article class="slide">
+                                    <div class="slide-media img-cover"><img
+                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="" /></div>
+                                    <div class="slide-content">
+                                        <div class="meta-box">
+                                            <span class="company-name">株式会社〇〇</span>
+                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                        </div>
+                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <ul class="case-tag">
+                                            <li class="case-tag--item"><span>メーカー</span></li>
+                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                        </ul>
+                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <a href="#" class="swiper-slide">
+                                <article class="slide">
+                                    <div class="slide-media img-cover"><img
+                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="" /></div>
+                                    <div class="slide-content">
+                                        <div class="meta-box">
+                                            <span class="company-name">株式会社〇〇</span>
+                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                        </div>
+                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <ul class="case-tag">
+                                            <li class="case-tag--item"><span>メーカー</span></li>
+                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                        </ul>
+                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <!-- /swiper-wrapper -->
+                        <!-- 
+                  <div class="swiper-controller">
+                    <div class="swiper-button">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div> -->
+                    </div>
+                    <!-- /swiper -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plan" class="section section--plan">
+        <div class="section__container">
+            <h2 class="section__title en">
+                <b>Plan</b>
+                <small class="jp">プラン</small>
+            </h2>
+            <ul class="plan_box grid">
+                <li class="plan_box--card">
+                    <div class="plan-header">
+                        <h3 class="sans-serif">COMPLETE</h3>
+                        <p class="plan-subtitle sans-serif">フルセットプラン</p>
+                    </div>
+                    <div class="inner">
+                        <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
+                        <p class="plan-message sans-serif">
+                            <span class="sans-serif">丸ごと依頼して、<br />一式揃えたい</span>企業さま向け
+                        </p>
+                        <ul class="plan-items">
+                            <li class="enabled sans-serif">タペストリー</li>
+                            <li class="enabled sans-serif">椅子装飾</li>
+                            <li class="enabled sans-serif">スタンドバナー</li>
+                            <li class="enabled sans-serif">テーブルクロス</li>
+                        </ul>
+                        <a href="#" class="plan-button btn">見積もり依頼はこちら</a>
+                    </div>
+                </li>
+                <li class="plan_box--card">
+                    <div class="plan-header">
+                        <h3 class="sans-serif">STANDARD</h3>
+                        <p class="plan-subtitle sans-serif">スタンダードプラン</p>
+                    </div>
+                    <div class="inner">
+                        <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
+                        <p class="plan-message sans-serif">
+                            <span class="sans-serif">試しにサービスを利用<br />してみたい</span>企業さま向け
+                        </p>
+                        <ul class="plan-items">
+                            <li class="enabled sans-serif">タペストリー</li>
+                            <li class="enabled sans-serif">椅子装飾</li>
+                            <li class="enabled sans-serif">スタンドバナー</li>
+                            <li class="disabled sans-serif">テーブルクロス</li>
+                        </ul>
+                        <a href="#" class="plan-button btn">見積もり依頼はこちら</a>
+                    </div>
+                </li>
+                <li class="plan_box--card">
+                    <div class="plan-header">
+                        <h3 class="sans-serif">MINIMUM</h3>
+                        <p class="plan-subtitle sans-serif">ミニマムプラン</p>
+                    </div>
+                    <div class="inner">
+                        <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
+                        <p class="plan-message sans-serif">
+                            <span class="sans-serif">試しにサービスを利用<br />してみたい</span>企業さま向け
+                        </p>
+                        <ul class="plan-items">
+                            <li class="disabled sans-serif">タペストリー</li>
+                            <li class="enabled sans-serif">椅子装飾</li>
+                            <li class="enabled sans-serif">スタンドバナー</li>
+                            <li class="disabled sans-serif">テーブルクロス</li>
+                        </ul>
+                        <a href="#" class="plan-button btn">見積もり依頼はこちら</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="cta_area">
+        <div class="inner">
+            <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
+            <h2>ヒアリング面談登録</h2>
+            <p>メール・オンライン会議での無料相談も承ります。</p>
+            <a href="#" class="btn">まずは無料相談</a>
+        </div>
+    </div>
+
+    <section id="flow" class="section section--flow">
+        <div class="section__container">
+            <div class="left">
+                <h2 class="section__title en"><b>Flow</b><small class="jp">ご利用の流れ</small></h2>
+            </div>
+
+            <div class="right">
+                <ul class="flow__step">
+                    <li class="flow__step--item">
+                        <i class="flow__step--num">STEP 01</i>
+                        <h3 class="flow__step--title">
+                            オンラインヒアリング <span class="sans-serif"><img
+                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
+                                    alt="" />30分~60分程度実施</span>
+                        </h3>
+                        <p class="flow__step--desc sans-serif">装飾ツールはもちろん、採用戦略のお困りごともまるっとご相談ください。</p>
+                    </li>
+                    <li class="flow__step--item">
+                        <i class="flow__step--num">STEP 02</i>
+                        <h3 class="flow__step--title">
+                            ご提案・お見積り <span class="sans-serif"><img
+                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
+                                    alt="" />ヒアリング内容を踏まえご提案</span>
+                        </h3>
+                        <p class="flow__step--desc sans-serif">正式にご発注いただく前に方向性をおすり合わせすることが可能です。
+                            コンセプトやデザインの方向性を、ディレクターラフをもとにご提案します。</p>
+                    </li>
+                    <li class="flow__step--item">
+                        <i class="flow__step--num">STEP 03</i>
+                        <h3 class="flow__step--title">ご注文</h3>
+                        <p class="flow__step--desc sans-serif">ロゴデータや素材データご提供</p>
+                    </li>
+                    <li class="flow__step--item">
+                        <i class="flow__step--num">STEP 04</i>
+                        <h3 class="flow__step--title">デザイン開始</h3>
+                        <p class="flow__step--desc sans-serif">製作開始後最短1週間で初稿をアップします。<br /><b
+                                class="sans-serif">※特急対応などは初回ヒアリング時にご相談ください。(特急料金が発生します。)</b></p>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/flow_img01.svg"
+                            alt="デザインの流れ" />
+                    </li>
+                    <li class="flow__step--item">
+                        <i class="flow__step--num">STEP 05</i>
+                        <h3 class="flow__step--title">印刷開始</h3>
+                        <p class="flow__step--desc sans-serif">最短１週間~２週間程度お時間をいただきます。<br /><b class="sans-serif">
+                                ※特急対応などは初回ヒアリング時にご相談ください。(特急料金が発生します。)</b></p>
+                    </li>
+
+                    <li class="flow__step--item">
+                        <i class="flow__step--num">STEP 06</i>
+                        <h3 class="flow__step--title">納品</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="media" class="section section--media">
+        <div class="section__container">
+            <h2 class="section__title en"><b>Media</b><small class="jp">採用やブランディングに関するお役立ち情報を公開しています</small></h2>
+            <ul class="flex">
+                <li>
+                    <a href=""><img src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/x_icon.svg"
+                            alt="" />X <small>@tengood0901</small></a>
+                </li>
+
+                <li>
+                    <a href=""><img src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/cbo_icon.svg"
+                            alt="" />社内でブランディングを<br />推進するための情報サイト</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="section section--faq">
+        <div class="section__container--s accordion">
+            <h2 class="section__title en"><b>FAQ</b><small class="jp">よくあるご質問</small></h2>
+            <div class="accordion__item">
+                <div class="box">
+                    <div class="accordion__title">
+                        <h3 class="question">デザインから納品までの期間を教えてください。</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="answer">
+                            最短で１ヵ月程度お時間をいただきます。当社は、単に見栄えが良いモノやロゴを配置しただけのデザインはしません。お客様の課題解決に寄り添ったコンセプトとデザインをご提供するために十分な製作期間を頂戴いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="box">
+                    <div class="accordion__title">
+                        <h3 class="question">オンラインヒアリングを省き、お見積りをいただくことは可能ですか。</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="answer">
+                            可能ですが基本的には初回のヒアリングを推奨しています。当社は、採用の専門家としてお客さまの課題やニーズをお伺いしたうえでご提案することに重きを置いています。お客さまが安心してご発注できるようにお時間をいただければ幸いです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="box">
+                    <div class="accordion__title">
+                        <h3 class="question">料金はどのように決まりますか。</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="answer">
+                            プランをベースに、初回のお打ち合わせ内容を踏まえコンセプト、ディレクターラフ、お見積りを共有します。(メールでの郵送だけでなく、オンラインミーティングでのご提案も可能です)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<?php get_footer(); ?>

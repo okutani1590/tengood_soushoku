@@ -1,0 +1,51 @@
+$breakpoint: 1024px;
+
+$breakpoint-map: (
+  pc: "screen and (min-width: #{($breakpoint + 1px)})",
+  sp: "screen and (max-width: #{$breakpoint})",
+);
+
+@mixin mq($device) {
+  @media #{map-get($breakpoint-map, $device)} {
+    @content;
+  }
+}
+
+// 背景
+
+@mixin bg-contain {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@mixin bg-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// ポジション
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin abs-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin abs-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin color_orange_hover {
+  transition: 0.3s;
+  color: #c73f33;
+}

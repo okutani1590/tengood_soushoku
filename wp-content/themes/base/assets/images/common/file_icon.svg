@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24">
+  <g id="グループ_54835" data-name="グループ 54835" transform="translate(-1017 -25)">
+    <path id="長方形_32" data-name="長方形 32" d="M1,1V18H15V1H1M0,0H16V19H0Z" transform="translate(1017 30)" fill="#fff"/>
+    <g id="グループ_14" data-name="グループ 14" transform="translate(1020.996 36.296)">
+      <path id="パス_5" data-name="パス 5" d="M2719.272,642.629h-8.01v-1h8.01Z" transform="translate(-2711.263 -642.129)" fill="#fff"/>
+      <path id="パス_6" data-name="パス 6" d="M2719.272,642.629h-8.01v-1h8.01Z" transform="translate(-2711.263 -638.925)" fill="#fff"/>
+      <path id="パス_7" data-name="パス 7" d="M2719.272,642.629h-8.01v-1h8.01Z" transform="translate(-2711.263 -635.721)" fill="#fff"/>
+    </g>
+    <g id="グループ_16" data-name="グループ 16" transform="translate(1027.998 25.331)">
+      <circle id="楕円形_12" data-name="楕円形 12" cx="5" cy="5" r="5" transform="translate(0.002 -0.331)" fill="#b59a66"/>
+      <path id="楕円形_12_-_アウトライン" data-name="楕円形 12 - アウトライン" d="M5,1A4,4,0,1,0,9,5,4,4,0,0,0,5,1M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(0.002 -0.331)" fill="#fff"/>
+      <g id="グループ_15" data-name="グループ 15" transform="translate(2.844 2.322)">
+        <path id="パス_8" data-name="パス 8" d="M2725.5,659.457h-1V655.17h1Z" transform="translate(-2722.843 -655.17)" fill="#fff"/>
+        <path id="パス_9" data-name="パス 9" d="M2724.658,660.011a.5.5,0,0,1-.354-.146l-2.157-2.158.707-.707,1.8,1.8,1.8-1.8.707.707-2.158,2.158A.5.5,0,0,1,2724.658,660.011Z" transform="translate(-2722.501 -654.816)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
