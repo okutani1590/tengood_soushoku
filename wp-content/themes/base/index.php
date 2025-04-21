@@ -10,7 +10,7 @@
                 </h1>
 
                 <div class="btn-box">
-                    <a href="" class="btn"> まずは無料相談する </a>
+                    <a href="" class="btn"> カンタンお見積り </a>
                 </div>
             </div>
 
@@ -171,17 +171,19 @@
     <section id="problem" class="section section--problem">
         <div class="section__container">
             <h2 class="section__title en">
-                <b>Problem</b>
-                <small class="jp">こんな課題はありませんか？</small>
+                <b class="jp">こんな課題はありませんか？</b>
             </h2>
             <div class="flex">
                 <div class="flex__item">
                     <figure>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img01.jpg"
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img04.jpg"
                             alt="＜課題01＞学生にスルーされる…" />
                         <figcaption>
                             <span>＜課題01＞ 学生にスルーされる…</span>
-                            <h3>学生が足を止めて<br /><b>話を聞きたくなるブース</b>にしたい</h3>
+                            <h3>
+                                学生が足をとめるような、<br>
+                                <b>惹きのあるブース</b>にしたい。
+                            </h3>
                         </figcaption>
                     </figure>
                 </div>
@@ -191,33 +193,12 @@
                             alt="どうせ作るなら…" />
                         <figcaption>
                             <span>＜課題02＞ どうせ作るなら…</span>
-                            <h3>クリエイティブに<b>こだわりたい</b></h3>
+                            <h3>クリエイティブにこだわり、<br><b>センスの良いツール
+                                </b>にしたい。</h3>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="flex__item">
-                    <figure>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img03.jpg"
-                            alt="ブース装飾に時間がかかる…" />
-                        <figcaption>
-                            <span>＜課題03＞ ブース装飾に時間がかかる…</span>
-                            <h3><b>採用オペレーションに集中</b>したい</h3>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="flex__item">
-                    <figure>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img04.jpg"
-                            alt="自社の世界観が伝わらない…" />
-                        <figcaption>
-                            <span>＜課題04＞ 自社の世界観が伝わらない…</span>
-                            <h3>
-                                学生に<br />
-                                <b>自社の魅力</b>を届けたい
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </div>
+
                 <div class="flex__item">
                     <figure>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img05.jpg"
@@ -235,16 +216,15 @@
     <section id="feature" class="section section--feature">
         <div class="section__container sticky" id="feature01">
             <div class="inner">
-                <h2 class="section__title--line">Feature01</h2>
+                <h2 class="section__title--line">私たちの強み</h2>
                 <div class="text-box">
                     <span class="en">Professional</span>
                     <h3 class="section__title--sub">
-                        採用の専門家が担当！<br />
-                        説明会における採用ノウハウをもとにご提案します。
+                        採用のプロフェッショナルが担当します。
                     </h3>
-                    <p class="desc">あらゆる業界の採用戦略に精通する採用の専門家が担当します。 <br
-                            class="pc" />お客さまのニーズやご要望をヒアリングし、採用コンサルタントとしての知見を活かしながら<br
-                            class="pc" />最適なご提案します。まずは気軽にご相談ください。</p>
+                    <p class="desc">
+                        全員が(一社)総合経営管理協会認定の採用コンサルタントや採用定着士認定を保有。延べ3000社以上のリクナビやマイナビなどの求人広告や採用ブランディングを手がけてきたプロフェッショナルが担当します。
+                    </p>
                     <div class="list">
                         <span>＜在籍スタッフの主な保有資格＞</span>
                         <p>
@@ -259,15 +239,15 @@
         </div>
         <div class="section__container sticky" id="feature02">
             <div class="inner">
-                <h2 class="section__title--line">Feature02</h2>
+                <!-- <h2 class="section__title--line">Feature02</h2> -->
                 <div class="text-box">
                     <span class="en">Creator</span>
                     <h3 class="section__title--sub">
-                        広告賞を受賞クリエイターが在籍！<br />
-                        学生が話を聞きたくなるデザインをご提案します。
+                        広告賞を多数受賞している、<br>
+                        クリエイターが制作します。
                     </h3>
                     <p class="desc">
-                        確かな実績と豊富な経験をもつクリエイターが担当します。<br />単にロゴや社名をデザインに落とし込む提案はしません。<br />お客さまの独自の強みを表現し、採用の課題解決につながるデザインをご提案します。
+                        BtoB広告賞やコピーライターズ賞などの受賞歴を持つクリエイターたちが制作を担当します。装飾ツールはクリエイティブが命。企業のらしさを踏まえたながら、求職者を惹きつける装飾ツールを制作します。
                     </p>
                     <div class="list">
                         <span>＜在籍スタッフの受賞歴＞</span>
@@ -284,16 +264,15 @@
         </div>
         <div class="section__container sticky" id="feature03">
             <div class="inner">
-                <h2 class="section__title--line">Feature03</h2>
+                <!-- <h2 class="section__title--line">Feature03</h2> -->
                 <div class="text-box">
                     <span class="en">Simple</span>
                     <h3 class="section__title--sub">
-                        お客さまがご対応することは<br />
-                        ヒアリングとデザインの確認のみ！
+                        デザインから印刷、納品まで<br>
+                        一括でお受けします。
                     </h3>
                     <p class="desc">
-                        まずは気軽にご連絡ください。<br />
-                        オンラインミーティングでご要望をお伺いし、デザインから納品までを一貫して対応します。
+                        デザインから納品まではもちろん、最適な装飾ツールの組み合わせのご提案からトータルに行います。パンフレットやチラシ、採用ムービー、採用HP、SNSプロモーションの全体設計と各制作も可能です。
                     </p>
                 </div>
             </div>
@@ -312,7 +291,7 @@
             <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
             <h2>ヒアリング面談登録</h2>
             <p>メール・オンライン会議での無料相談も承ります。</p>
-            <a href="#" class="btn">まずは無料相談</a>
+            <a href="#" class="btn">カンタンお見積り</a>
         </div>
     </div>
 
@@ -447,19 +426,10 @@
                                 </article>
                             </a>
                         </div>
-                        <!-- /swiper-wrapper -->
-                        <!-- 
-                  <div class="swiper-controller">
-                    <div class="swiper-button">
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
+
                     </div>
-                  </div> -->
-                    </div>
-                    <!-- /swiper -->
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="plan" class="section section--plan">
@@ -477,7 +447,7 @@
                     <div class="inner">
                         <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
                         <p class="plan-message sans-serif">
-                            <span class="sans-serif">丸ごと依頼して、<br />一式揃えたい</span>企業さま向け
+                            <span class="sans-serif">最低限のツールを揃えたい</span>企業さま向け
                         </p>
                         <ul class="plan-items">
                             <li class="enabled sans-serif">タペストリー</li>
@@ -535,7 +505,7 @@
             <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
             <h2>ヒアリング面談登録</h2>
             <p>メール・オンライン会議での無料相談も承ります。</p>
-            <a href="#" class="btn">まずは無料相談</a>
+            <a href="#" class="btn">カンタンお見積り</a>
         </div>
     </div>
 
