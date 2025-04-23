@@ -13,4 +13,6 @@
             </div>
         </div>
     </section>
+    <!-- CTA media -->
+    <?php get_template_part('template-parts/cta', 'media'); ?>
 </div>

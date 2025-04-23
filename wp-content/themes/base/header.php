@@ -22,13 +22,21 @@
                 <i class="header__logo"><img
                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg"
                         alt="RBD" /></i>
+
+                <!-- ハンバーガーボタン -->
+                <button class="modalbtn" id="modalbtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="#">特長</a></li>
-                        <li><a href="#">導入事例</a></li>
-                        <li><a href="#">基本プラン</a></li>
-                        <li><a href="#">制作フロー</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="<?php echo home_url(); ?>/#feature">特長</a></li>
+                        <li><a href="<?php echo home_url(); ?>/#case">導入事例</a></li>
+                        <li><a href="<?php echo home_url(); ?>/#plan">基本プラン</a></li>
+                        <li><a href="<?php echo home_url(); ?>/#flow">制作フロー</a></li>
+                        <li><a href="<?php echo home_url(); ?>/#faq">FAQ</a></li>
                         <li class="sns_link">
                             <a href="#"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_x_icon.svg"

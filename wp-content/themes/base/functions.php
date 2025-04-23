@@ -39,8 +39,11 @@ function my_script_init()
   wp_enqueue_style('reset', 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
   wp_enqueue_style('swiper_css', 'https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css');
   wp_enqueue_style('googleapis-gstatic', 'https://fonts.gstatic.com');
+  wp_enqueue_style('anime', get_template_directory_uri() . '/assets/css/anime.css?' . $version);
   wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/styles.css?' . $version);
  
+
+  
 
   // JSの読み込み
   if (!is_admin()) {
@@ -48,6 +51,7 @@ function my_script_init()
     wp_enqueue_script('jquery2', 'https://code.jquery.com/jquery-3.4.1.min.js', [], null, true);
     wp_enqueue_script('swiper_js', 'https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js', [], null, true);
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', [], null, true);
+    wp_enqueue_script('anime-js', get_template_directory_uri() . '/assets/js/anime.js', [], null, true);
     wp_enqueue_script('common-js', get_template_directory_uri() . '/assets/js/common.js', [], null, true);
     wp_enqueue_script('vue3', 'https://unpkg.com/vue@3.5.13/dist/vue.global.js', [], null, true);
     wp_enqueue_script('property', get_template_directory_uri() . '/assets/js/property.js', ['vue3'], null, true);

@@ -28,6 +28,17 @@ html {
   }
 }
 
+@include mq(sp) {
+  .pc {
+    display: none;
+  }
+}
+@include mq(pc) {
+  .sp {
+    display: none;
+  }
+}
+
 body {
   font-family: var(--font-base);
   font-size: var(--font-size-base);
@@ -125,6 +136,8 @@ table {
   display: block;
   text-align: left;
   position: relative;
+  font-family: var(--sub-font);
+  font-weight: 500;
   @media (hover: hover) {
     &:hover {
       background: #fff;
@@ -325,6 +338,9 @@ table {
         .swiper-slide {
           border-right: 1px solid #cbc5b9;
           padding-right: 40px;
+          @include mq(sp) {
+            padding-right: 20px;
+          }
         }
       }
     }
@@ -402,7 +418,7 @@ table {
   overflow: hidden;
   backdrop-filter: blur(12px);
   @include mq(sp) {
-    display: none;
+    overflow: visible;
   }
   &.is-sticky {
     backdrop-filter: none;
@@ -454,6 +470,9 @@ table {
       display: flex;
       align-items: center;
       margin-right: 30px;
+      @include mq(sp) {
+        flex-direction: column;
+      }
       li {
         position: relative;
         &:not(:last-child) {
@@ -541,6 +560,65 @@ table {
   }
 }
 
+/* ハンバーガー初期状態（PCでは非表示） */
+.modalbtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modalbtn span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* スマホ表示でハンバーガー表示、ナビは非表示 */
+@include mq(sp) {
+  .modalbtn {
+    display: flex;
+  }
+
+  .header__nav {
+    transition: 0.3s;
+    background: #0e3864;
+    background: linear-gradient(135deg, rgba(14, 56, 100, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 990;
+  }
+
+  .header__nav.active {
+    display: block;
+    right: -40%;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+#page {
+  .header {
+    &::before {
+      background-image: none;
+      background-color: #020c16;
+      opacity: 1;
+    }
+  }
+}
+
 // CTA
 
 .cta_area {
@@ -608,22 +686,110 @@ table {
   }
 }
 
+#media {
+  background: #0e3864;
+  background: linear-gradient(135deg, rgba(14, 56, 100, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  padding: 120px 0;
+  @include mq(sp) {
+    padding: 60px 25px;
+  }
+  h2 {
+    margin-inline: auto;
+    margin-bottom: 60px;
+  }
+  .flex {
+    max-width: 680px;
+    justify-content: space-between;
+    margin-inline: auto;
+    @include mq(sp) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    li {
+      width: 48%;
+      @include mq(sp) {
+        width: 100%;
+      }
+      border-radius: 5px;
+      background-color: #2f2d2d;
+      padding: 20px 40px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      small {
+        display: block;
+      }
+      img {
+        display: block;
+        margin: 0 auto 30px;
+      }
+      &:nth-child(2) {
+        background-color: #0dac9f;
+      }
+    }
+  }
+}
+
+#page {
+  #media {
+    background: #e2ddd3;
+    .section__container {
+      padding: 0;
+      text-align: center;
+      h2 {
+        b,
+        small {
+          color: #0d3864;
+        }
+        b {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            width: 5px;
+            height: 5px;
+            background-color: #0dac9f;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
 .footer {
   background: #0e3864;
   background: linear-gradient(135deg, rgba(14, 56, 100, 1) 0%, rgba(0, 0, 0, 1) 100%);
   padding-block: 70px 40px;
+  @include mq(sp) {
+    padding-block: 40px 20px;
+  }
   &__inner {
     max-width: 1125px;
     margin-inline: auto;
-
+    @include mq(sp) {
+      flex-direction: column;
+    }
     &--left {
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @include mq(sp) {
+        width: 100%;
+        text-align: center;
+      }
       .f-logo {
         width: 130px;
         display: block;
+        @include mq(sp) {
+          margin-inline: auto;
+          margin-bottom: 15px;
+          max-width: 100px;
+        }
         img {
           width: 100%;
         }
@@ -649,6 +815,9 @@ table {
           justify-content: center;
           align-items: center;
           gap: 5px;
+          @include mq(sp) {
+            margin-inline: auto;
+          }
           &::after {
             content: "";
             background-color: #d3b884;
@@ -665,17 +834,24 @@ table {
 
     &--right {
       width: 50%;
-
+      @include mq(sp) {
+        width: 100%;
+      }
       .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 100px;
         width: 90%;
         gap: 0px;
+        @include mq(sp) {
+          grid-template-columns: 1fr;
+          margin: 0 auto;
+        }
         .grid__item {
           display: flex;
           flex-direction: column;
           gap: 10px;
+
           h3 {
             font-size: 18px;
             font-weight: bold;
@@ -702,14 +878,31 @@ table {
       display: flex;
       justify-content: end;
       gap: 15px;
+      @include mq(sp) {
+        justify-content: center;
+        gap: 30px;
+        margin-block: 20px 30px;
+      }
     }
     &--nav {
       display: flex;
       flex-direction: column;
       row-gap: 30px;
+      margin-bottom: 10px;
+
+      @include mq(sp) {
+        flex-direction: unset;
+        justify-content: center;
+        gap: 30px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+      }
       &--item {
         a {
           font-family: var(--sub-font);
+          @include mq(sp) {
+            font-size: 14px;
+          }
         }
         &.pp {
           a {
@@ -734,6 +927,10 @@ table {
       margin-top: 20px;
       width: fit-content;
       margin-left: auto;
+      @include mq(sp) {
+        font-size: 10px;
+        margin: 0 auto;
+      }
     }
   }
 }

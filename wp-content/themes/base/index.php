@@ -171,7 +171,7 @@
     <section id="problem" class="section section--problem">
         <div class="section__container">
             <h2 class="section__title en">
-                <b class="jp">こんな課題はありませんか？</b>
+                <b class="jp">こんな課題は<br class="sp">ありませんか？</b>
             </h2>
             <div class="flex">
                 <div class="flex__item">
@@ -204,7 +204,7 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img05.jpg"
                             alt="人事側での制作が難しい" />
                         <figcaption>
-                            <span>＜課題05＞ 人事側での制作が難しい</span>
+                            <span>＜課題03＞ 人事側での制作が難しい</span>
                             <h3><b>何を伝えれば</b><br /><b>効果的か</b>わからない</h3>
                         </figcaption>
                     </figure>
@@ -223,7 +223,7 @@
                         採用のプロフェッショナルが担当します。
                     </h3>
                     <p class="desc">
-                        全員が(一社)総合経営管理協会認定の採用コンサルタントや採用定着士認定を保有。延べ3000社以上のリクナビやマイナビなどの求人広告や採用ブランディングを手がけてきたプロフェッショナルが担当します。
+                        全員が(一社)総合経営管理協会認定の採用コンサルタントや採用定着士認定を保有。<br>延べ3000社以上のリクナビやマイナビなどの求人広告や採用ブランディングを手がけてきた<br>プロフェッショナルが担当します。
                     </p>
                     <div class="list">
                         <span>＜在籍スタッフの主な保有資格＞</span>
@@ -272,7 +272,11 @@
                         一括でお受けします。
                     </h3>
                     <p class="desc">
-                        デザインから納品まではもちろん、最適な装飾ツールの組み合わせのご提案からトータルに行います。パンフレットやチラシ、採用ムービー、採用HP、SNSプロモーションの全体設計と各制作も可能です。
+                        デザインから納品まではもちろん、<br class="pc">
+                        最適な装飾ツールの組み合わせのご提案からトータルに行います。<br class="pc">
+                        パンフレットやチラシ、採用ムービー、採用HP、<br class="pc">
+                        SNSプロモーションの全体設計と各制作も可能です。
+
                     </p>
                 </div>
             </div>
@@ -306,125 +310,65 @@
                 <div class="slide-type-case">
                     <div class="swiper">
                         <div class="swiper-wrapper">
+
+
+                            <?php
+$paged = get_query_var('paged', 1);
+$query = new WP_Query(
+    array(
+		'post_type' => 'post',
+		'posts_per_page' => -1,
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'paged' => $paged,
+    )
+);
+?><?php if ( $query->have_posts() ) : ?>
+                            <?php while ( $query->have_posts() ) : $query->the_post();?>
+
                             <a href="#" class="swiper-slide">
                                 <article class="slide">
-                                    <div class="slide-media img-cover"><img
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="" /></div>
+                                    <div class="slide-media img-cover">
+                                        <?php if ( has_post_thumbnail() ) : ?>
+                                        <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>"
+                                            alt="<?php the_title_attribute(); ?>" />
+                                        <?php else : ?>
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
+                                            alt="no image" />
+                                        <?php endif; ?>
+                                    </div>
                                     <div class="slide-content">
                                         <div class="meta-box">
-                                            <span class="company-name">株式会社〇〇</span>
-                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
+                                            <span class="company-name"><?php the_field('name'); ?></span>
+                                            <time class="slide-date"
+                                                datetime="2021-12-01"><?php the_time("Y年m月j日") ?></time>
                                         </div>
-                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
+                                        <h2 class="slide-title"><?php the_title(); ?></h2>
                                         <ul class="case-tag">
-                                            <li class="case-tag--item"><span>メーカー</span></li>
-                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
+                                            <?php
+    $categories = get_the_category();
+    if ( !empty($categories) ) :
+        foreach ( $categories as $category ) :
+    ?>
+                                            <li class="case-tag--item">
+                                                <span><?php echo esc_html($category->name); ?></span>
+                                            </li>
+                                            <?php
+        endforeach;
+    endif;
+    ?>
                                         </ul>
-                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
+                                        <p class="desc">
+                                            <?php the_content(); ?>
+                                        </p>
                                     </div>
                                 </article>
                             </a>
 
-                            <a href="#" class="swiper-slide">
-                                <article class="slide">
-                                    <div class="slide-media img-cover"><img
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="" /></div>
-                                    <div class="slide-content">
-                                        <div class="meta-box">
-                                            <span class="company-name">株式会社〇〇</span>
-                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
-                                        </div>
-                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
-                                        <ul class="case-tag">
-                                            <li class="case-tag--item"><span>メーカー</span></li>
-                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
-                                        </ul>
-                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
-                                    </div>
-                                </article>
-                            </a>
+                            <?php endwhile; ?>
+                            <?php endif; wp_reset_postdata(); ?>
 
-                            <a href="#" class="swiper-slide">
-                                <article class="slide">
-                                    <div class="slide-media img-cover"><img
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="" /></div>
-                                    <div class="slide-content">
-                                        <div class="meta-box">
-                                            <span class="company-name">株式会社〇〇</span>
-                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
-                                        </div>
-                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
-                                        <ul class="case-tag">
-                                            <li class="case-tag--item"><span>メーカー</span></li>
-                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
-                                        </ul>
-                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
-                                    </div>
-                                </article>
-                            </a>
 
-                            <a href="#" class="swiper-slide">
-                                <article class="slide">
-                                    <div class="slide-media img-cover"><img
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="" /></div>
-                                    <div class="slide-content">
-                                        <div class="meta-box">
-                                            <span class="company-name">株式会社〇〇</span>
-                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
-                                        </div>
-                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
-                                        <ul class="case-tag">
-                                            <li class="case-tag--item"><span>メーカー</span></li>
-                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
-                                        </ul>
-                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
-                                    </div>
-                                </article>
-                            </a>
-
-                            <a href="#" class="swiper-slide">
-                                <article class="slide">
-                                    <div class="slide-media img-cover"><img
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="" /></div>
-                                    <div class="slide-content">
-                                        <div class="meta-box">
-                                            <span class="company-name">株式会社〇〇</span>
-                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
-                                        </div>
-                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
-                                        <ul class="case-tag">
-                                            <li class="case-tag--item"><span>メーカー</span></li>
-                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
-                                        </ul>
-                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
-                                    </div>
-                                </article>
-                            </a>
-
-                            <a href="#" class="swiper-slide">
-                                <article class="slide">
-                                    <div class="slide-media img-cover"><img
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="" /></div>
-                                    <div class="slide-content">
-                                        <div class="meta-box">
-                                            <span class="company-name">株式会社〇〇</span>
-                                            <time class="slide-date" datetime="2021-12-01">2021.12.01</time>
-                                        </div>
-                                        <h2 class="slide-title">企業のメッセージを的確に伝えるクリエイティブで、新規応募数が10人増加</h2>
-                                        <ul class="case-tag">
-                                            <li class="case-tag--item"><span>メーカー</span></li>
-                                            <li class="case-tag--item"><span>従業員数〇〇人</span></li>
-                                        </ul>
-                                        <p class="desc">株式会社〇〇様の合同説明会ブースでは、参加者が直感的にブランドに触れることができるインタラクティブ…</p>
-                                    </div>
-                                </article>
-                            </a>
                         </div>
 
                     </div>
@@ -450,12 +394,14 @@
                             <span class="sans-serif">最低限のツールを揃えたい</span>企業さま向け
                         </p>
                         <ul class="plan-items">
-                            <li class="enabled sans-serif">タペストリー</li>
-                            <li class="enabled sans-serif">椅子装飾</li>
-                            <li class="enabled sans-serif">スタンドバナー</li>
-                            <li class="enabled sans-serif">テーブルクロス</li>
+                            <li class="enabled sans-serif">椅子装飾：8アイテム</li>
+                            <li class="enabled sans-serif">ロールアップ：2アイテム</li>
+                            <li class="enabled sans-serif">タペストリー：2アイテム</li>
+                            <li class="enabled sans-serif">テーブルクロス：アイテム</li>
+                            <li class="enabled sans-serif">マットシート：2アイテム</li>
+                            <li class="enabled sans-serif">バックパネル：2アイテム</li>
                         </ul>
-                        <a href="#" class="plan-button btn">見積もり依頼はこちら</a>
+
                     </div>
                 </li>
                 <li class="plan_box--card">
@@ -469,12 +415,13 @@
                             <span class="sans-serif">試しにサービスを利用<br />してみたい</span>企業さま向け
                         </p>
                         <ul class="plan-items">
-                            <li class="enabled sans-serif">タペストリー</li>
-                            <li class="enabled sans-serif">椅子装飾</li>
-                            <li class="enabled sans-serif">スタンドバナー</li>
-                            <li class="disabled sans-serif">テーブルクロス</li>
+                            <li class="enabled sans-serif">椅子装飾：4アイテム</li>
+                            <li class="enabled sans-serif">ロールアップ：1アイテム</li>
+                            <li class="enabled sans-serif">タペストリー：1アイテム</li>
+                            <li class="enabled sans-serif">テーブルクロス：1アイテム</li>
+                            <li class="disabled sans-serif">マットシート</li>
+                            <li class="disabled sans-serif">バックパネル</li>
                         </ul>
-                        <a href="#" class="plan-button btn">見積もり依頼はこちら</a>
                     </div>
                 </li>
                 <li class="plan_box--card">
@@ -488,15 +435,21 @@
                             <span class="sans-serif">試しにサービスを利用<br />してみたい</span>企業さま向け
                         </p>
                         <ul class="plan-items">
-                            <li class="disabled sans-serif">タペストリー</li>
-                            <li class="enabled sans-serif">椅子装飾</li>
-                            <li class="enabled sans-serif">スタンドバナー</li>
-                            <li class="disabled sans-serif">テーブルクロス</li>
+                            <li class="enabled sans-serif">椅子装飾：4アイテム</li>
+                            <li class="enabled sans-serif">ロールアップ：1アイテム</li>
+                            <li class="enabled sans-serif">タペストリー：1アイテム</li>
+                            <li class="enabled sans-serif">テーブルクロス：1アイテム</li>
+                            <li class="disabled sans-serif">マットシート</li>
+                            <li class="disabled sans-serif">バックパネル</li>
                         </ul>
-                        <a href="#" class="plan-button btn">見積もり依頼はこちら</a>
+
                     </div>
                 </li>
             </ul>
+            <p class="desc">
+                各プランのアイテム数の増減やオプション選択は、「お見積りはこちら」より調整が可能です。
+            </p>
+            <div class="btn_area"><a href="#" class="btn">お見積りはこちら</a></div>
         </div>
     </section>
 
@@ -517,8 +470,16 @@
 
             <div class="right">
                 <ul class="flow__step">
-                    <li class="flow__step--item">
+                    <li class="flow__step--item fadeUpTrigger">
                         <i class="flow__step--num">STEP 01</i>
+                        <h3 class="flow__step--title">
+                            カンタンお見積り <a href="" class="btn">カンタンお見積り</a>
+                        </h3>
+                        <p class="flow__step--desc sans-serif">下記のボタンからお申し込みください。</p>
+                    </li>
+
+                    <li class="flow__step--item fadeUpTrigger">
+                        <i class="flow__step--num">STEP 02</i>
                         <h3 class="flow__step--title">
                             オンラインヒアリング <span class="sans-serif"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
@@ -526,8 +487,8 @@
                         </h3>
                         <p class="flow__step--desc sans-serif">装飾ツールはもちろん、採用戦略のお困りごともまるっとご相談ください。</p>
                     </li>
-                    <li class="flow__step--item">
-                        <i class="flow__step--num">STEP 02</i>
+                    <li class="flow__step--item fadeUpTrigger">
+                        <i class="flow__step--num">STEP 03</i>
                         <h3 class="flow__step--title">
                             ご提案・お見積り <span class="sans-serif"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
@@ -536,28 +497,28 @@
                         <p class="flow__step--desc sans-serif">正式にご発注いただく前に方向性をおすり合わせすることが可能です。
                             コンセプトやデザインの方向性を、ディレクターラフをもとにご提案します。</p>
                     </li>
-                    <li class="flow__step--item">
-                        <i class="flow__step--num">STEP 03</i>
+                    <li class="flow__step--item fadeUpTrigger">
+                        <i class="flow__step--num">STEP 04</i>
                         <h3 class="flow__step--title">ご注文</h3>
                         <p class="flow__step--desc sans-serif">ロゴデータや素材データご提供</p>
                     </li>
-                    <li class="flow__step--item">
-                        <i class="flow__step--num">STEP 04</i>
+                    <li class="flow__step--item fadeUpTrigger">
+                        <i class="flow__step--num">STEP 05</i>
                         <h3 class="flow__step--title">デザイン開始</h3>
                         <p class="flow__step--desc sans-serif">製作開始後最短1週間で初稿をアップします。<br /><b
                                 class="sans-serif">※特急対応などは初回ヒアリング時にご相談ください。(特急料金が発生します。)</b></p>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/flow_img01.svg"
                             alt="デザインの流れ" />
                     </li>
-                    <li class="flow__step--item">
-                        <i class="flow__step--num">STEP 05</i>
+                    <li class="flow__step--item fadeUpTrigger">
+                        <i class="flow__step--num">STEP 06</i>
                         <h3 class="flow__step--title">印刷開始</h3>
                         <p class="flow__step--desc sans-serif">最短１週間~２週間程度お時間をいただきます。<br /><b class="sans-serif">
                                 ※特急対応などは初回ヒアリング時にご相談ください。(特急料金が発生します。)</b></p>
                     </li>
 
-                    <li class="flow__step--item">
-                        <i class="flow__step--num">STEP 06</i>
+                    <li class="flow__step--item fadeUpTrigger">
+                        <i class="flow__step--num">STEP 07</i>
                         <h3 class="flow__step--title">納品</h3>
                     </li>
                 </ul>
@@ -565,22 +526,8 @@
         </div>
     </section>
 
-    <section id="media" class="section section--media">
-        <div class="section__container">
-            <h2 class="section__title en"><b>Media</b><small class="jp">採用やブランディングに関するお役立ち情報を公開しています</small></h2>
-            <ul class="flex">
-                <li>
-                    <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/x_icon.svg"
-                            alt="" />X <small>@tengood0901</small></a>
-                </li>
-
-                <li>
-                    <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/cbo_icon.svg"
-                            alt="" />社内でブランディングを<br />推進するための情報サイト</a>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <!-- CTA media -->
+    <?php get_template_part('template-parts/cta', 'media'); ?>
 
     <section id="faq" class="section section--faq">
         <div class="section__container--s accordion">

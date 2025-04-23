@@ -13,7 +13,7 @@
     &__container {
       max-width: 1125px;
       margin: 0 auto;
-      padding-block: 120px 280px;
+      padding-block: 120px 180px;
       box-sizing: border-box;
       position: relative;
     }
@@ -160,11 +160,16 @@
       .desc {
         font-size: 18px;
         text-align: center;
+        margin-bottom: 60px;
       }
       a.btn-back {
         display: block;
-        width: 320px;
+        width: 200px;
+        border-radius: 5px;
+        margin: 0 auto;
         background-color: #0d3864;
+        text-align: center;
+        padding: 20px;
       }
     }
   }
