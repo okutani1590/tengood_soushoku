@@ -145,7 +145,7 @@
     }
     &__title {
       font-size: 4.2rem;
-      margin-bottom: 1em;
+      margin-bottom: 60px;
       color: #fff;
       line-height: 1.2em;
       width: fit-content;
@@ -159,6 +159,7 @@
         display: block;
         margin-inline: auto;
         font-weight: 500;
+        margin-bottom: 5px;
         &::before {
           content: "";
           position: absolute;
@@ -638,6 +639,8 @@
       margin-inline: auto;
       b {
         margin-left: auto;
+        font-size: 32px;
+        margin-bottom: 10px;
       }
     }
     .flex {

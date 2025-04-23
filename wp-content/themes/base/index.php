@@ -30,15 +30,27 @@
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide01.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide02.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide05.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide03.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide06.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide07.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide08.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide09.jpg"
                                 alt="" />
                         </div>
                     </div>
@@ -46,29 +58,46 @@
                 <div class="swiper swiper2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide10.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide11.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide12.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide05.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide13.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide06.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide14.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide15.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide05.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide16.jpg"
                                 alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide06.jpg"
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide17.jpg"
                                 alt="" />
                         </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide18.jpg"
+                                alt="" />
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -171,12 +200,13 @@
     <section id="problem" class="section section--problem">
         <div class="section__container">
             <h2 class="section__title en">
-                <b class="jp">こんな課題は<br class="sp">ありませんか？</b>
+                <b class="jp">Problem</b>
+                こんな課題は<br class="sp">ありませんか？
             </h2>
             <div class="flex">
                 <div class="flex__item">
                     <figure>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img04.jpg"
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img01.jpg"
                             alt="＜課題01＞学生にスルーされる…" />
                         <figcaption>
                             <span>＜課題01＞ 学生にスルーされる…</span>
@@ -201,7 +231,7 @@
 
                 <div class="flex__item">
                     <figure>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img05.jpg"
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img03.jpg"
                             alt="人事側での制作が難しい" />
                         <figcaption>
                             <span>＜課題03＞ 人事側での制作が難しい</span>
@@ -239,7 +269,7 @@
         </div>
         <div class="section__container sticky" id="feature02">
             <div class="inner">
-                <!-- <h2 class="section__title--line">Feature02</h2> -->
+                <h2 class="section__title--line">私たちの強み</h2>
                 <div class="text-box">
                     <span class="en">Creator</span>
                     <h3 class="section__title--sub">
@@ -247,7 +277,8 @@
                         クリエイターが制作します。
                     </h3>
                     <p class="desc">
-                        BtoB広告賞やコピーライターズ賞などの受賞歴を持つクリエイターたちが制作を担当します。装飾ツールはクリエイティブが命。企業のらしさを踏まえたながら、求職者を惹きつける装飾ツールを制作します。
+                        BtoB広告賞やコピーライターズ賞などの受賞歴を持つクリエイターたちが制作を担当します。<br class="pc">装飾ツールはクリエイティブが命。<br
+                            class="pc">企業のらしさを踏まえたながら、求職者を惹きつける装飾ツールを制作します。
                     </p>
                     <div class="list">
                         <span>＜在籍スタッフの受賞歴＞</span>
@@ -264,7 +295,7 @@
         </div>
         <div class="section__container sticky" id="feature03">
             <div class="inner">
-                <!-- <h2 class="section__title--line">Feature03</h2> -->
+                <h2 class="section__title--line">私たちの強み</h2>
                 <div class="text-box">
                     <span class="en">Simple</span>
                     <h3 class="section__title--sub">

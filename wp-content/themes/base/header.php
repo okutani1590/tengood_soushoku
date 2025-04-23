@@ -23,6 +23,20 @@
                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg"
                         alt="RBD" /></i>
 
+
+                <ul class="sp header__sns">
+                    <li class="sns_link">
+                        <a href="#"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_x_icon.svg"
+                                alt="" /></a>
+                    </li>
+                    <li class="sns_link">
+                        <a href="#"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_facebook_icon.svg"
+                                alt="" /></a>
+                    </li>
+                </ul>
+
                 <!-- ハンバーガーボタン -->
                 <button class="modalbtn" id="modalbtn">
                     <span></span>
@@ -31,18 +45,29 @@
                 </button>
 
                 <nav class="header__nav">
-                    <ul>
+
+                    <div class="contact-box sp">
+                        <ul class="contact flex">
+                            <li class="contact_link">
+                                <a href="#">資料請求</a>
+                            </li>
+                            <li class="contact_link">
+                                <a href="#">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav__list">
                         <li><a href="<?php echo home_url(); ?>/#feature">特長</a></li>
                         <li><a href="<?php echo home_url(); ?>/#case">導入事例</a></li>
                         <li><a href="<?php echo home_url(); ?>/#plan">基本プラン</a></li>
                         <li><a href="<?php echo home_url(); ?>/#flow">制作フロー</a></li>
                         <li><a href="<?php echo home_url(); ?>/#faq">FAQ</a></li>
-                        <li class="sns_link">
+                        <li class="sns_link pc">
                             <a href="#"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_x_icon.svg"
                                     alt="" /></a>
                         </li>
-                        <li class="sns_link">
+                        <li class="sns_link pc">
                             <a href="#"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_facebook_icon.svg"
                                     alt="" /></a>
