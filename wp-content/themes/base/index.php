@@ -258,10 +258,10 @@
                     <div class="list">
                         <span>＜在籍スタッフの主な保有資格＞</span>
                         <p>
-                            一般社団法人総合経営管理協会認定 採用コンサルタント<br />
-                            一般社団法人採用定着支援協会 採用定着士<br />
-                            キャリアコンサルタント（国家資格）<br />
-                            CDA（キャリア・ディベロップメント・アドバイザー　など
+                            ▪ 一般社団法人総合経営管理協会認定 採用コンサルタント<br />
+                            ▪ 一般社団法人採用定着支援協会 採用定着士<br />
+                            ▪ キャリアコンサルタント（国家資格）<br />
+                            ▪ CDA（キャリア・ディベロップメント・アドバイザー　など
                         </p>
                     </div>
                 </div>
@@ -329,7 +329,6 @@
             <a href="#" class="btn">カンタンお見積り</a>
         </div>
     </div>
-
     <section id="case" class="section section--case">
         <div class="section__container">
             <h2 class="section__title en">
@@ -342,69 +341,93 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
 
+                            <?php
+              $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+              $args = [
+                'post_type'      => 'post',
+                'posts_per_page' => 10, // 表示件数を制限することでパフォーマンス向上
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+                'paged'          => $paged,
+              ];
+              $case_query = new WP_Query($args);
+            ?>
+
+                            <?php if ($case_query->have_posts()) : ?>
+                            <?php while ($case_query->have_posts()) : $case_query->the_post(); ?>
 
                             <?php
-$paged = get_query_var('paged', 1);
-$query = new WP_Query(
-    array(
-		'post_type' => 'post',
-		'posts_per_page' => -1,
-		'orderby' => 'date',
-		'order' => 'DESC',
-		'paged' => $paged,
-    )
-);
-?><?php if ( $query->have_posts() ) : ?>
-                            <?php while ( $query->have_posts() ) : $query->the_post();?>
+$categories = get_the_category();
+$tag_names = array();
 
-                            <a href="#" class="swiper-slide">
+if ( !empty($categories) ) {
+    foreach ( $categories as $category ) {
+        $tag_names[] = $category->name;
+    }
+}
+$data_tags = esc_attr(implode(', ', $tag_names));
+?>
+                            <a href="javascript:void(0);" class="swiper-slide open-modal"
+                                data-title="<?php echo esc_attr(get_the_title()); ?>"
+                                data-content="<?php echo esc_attr(get_the_content()); ?>"
+                                data-name="<?php echo esc_attr(get_field('name')); ?>"
+                                data-tags="<?php echo $data_tags; ?>"
+                                data-image="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>">
                                 <article class="slide">
+
                                     <div class="slide-media img-cover">
-                                        <?php if ( has_post_thumbnail() ) : ?>
-                                        <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>"
+                                        <?php if (has_post_thumbnail()) : ?>
+                                        <img src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'full')); ?>"
                                             alt="<?php the_title_attribute(); ?>" />
                                         <?php else : ?>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/case_01.jpg"
-                                            alt="no image" />
+                                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/top/case_01.jpg"
+                                            alt="No image available" />
                                         <?php endif; ?>
                                     </div>
+
                                     <div class="slide-content">
                                         <div class="meta-box">
-                                            <span class="company-name"><?php the_field('name'); ?></span>
+                                            <span class="company-name">
+                                                <?php echo esc_html(get_field('name')); ?>
+                                            </span>
                                             <time class="slide-date"
-                                                datetime="2021-12-01"><?php the_time("Y年m月j日") ?></time>
+                                                datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                                                <?php echo esc_html(get_the_date('Y年n月j日')); ?>
+                                            </time>
                                         </div>
+
                                         <h2 class="slide-title"><?php the_title(); ?></h2>
+
+                                        <?php
+                        $categories = get_the_category();
+                        if (!empty($categories)) :
+                      ?>
                                         <ul class="case-tag">
-                                            <?php
-    $categories = get_the_category();
-    if ( !empty($categories) ) :
-        foreach ( $categories as $category ) :
-    ?>
+                                            <?php foreach ($categories as $category) : ?>
                                             <li class="case-tag--item">
                                                 <span><?php echo esc_html($category->name); ?></span>
                                             </li>
-                                            <?php
-        endforeach;
-    endif;
-    ?>
+                                            <?php endforeach; ?>
                                         </ul>
+                                        <?php endif; ?>
+
                                         <p class="desc">
-                                            <?php the_content(); ?>
+                                            <?php echo wp_kses_post(get_the_excerpt()); ?>
                                         </p>
                                     </div>
                                 </article>
                             </a>
-
                             <?php endwhile; ?>
-                            <?php endif; wp_reset_postdata(); ?>
-
+                            <?php wp_reset_postdata(); ?>
+                            <?php else : ?>
+                            <p>導入事例は現在ありません。</p>
+                            <?php endif; ?>
 
                         </div>
-
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="plan" class="section section--plan">
@@ -604,6 +627,90 @@ $query = new WP_Query(
         </div>
     </section>
 </div>
+
+<!-- モーダル -->
+<div id="popup-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div id="modal-body">
+            <!-- JavaScriptでここに投稿内容を挿入 -->
+        </div>
+    </div>
+</div>
+
+<style>
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("popup-modal");
+    const modalBody = document.getElementById("modal-body");
+    const closeModal = document.querySelector(".modal-close");
+
+    document.querySelectorAll(".open-modal").forEach(el => {
+        el.addEventListener("click", function() {
+            const title = this.dataset.title;
+            const content = this.dataset.content;
+            const image = this.dataset.image;
+            const name = this.dataset.name;
+            const tags = this.dataset.tags;
+
+            // カンマ区切りのタグをリストに変換
+            const tagList = tags.split(',').map(tag => `<li>${tag.trim()}</li>`).join('');
+
+            modalBody.innerHTML = `
+                <ul class="case-tag">${tagList}</ul>
+                <span class="company-name">${name}</span>
+                <h2>${title}</h2>
+                <p>${content}</p>
+            `;
+            modal.style.display = "block";
+        });
+    });
+
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // モーダルの外側をクリックして閉じる処理
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+</script>
+
+
 
 
 <?php get_footer(); ?>

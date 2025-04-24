@@ -966,6 +966,73 @@ table {
   }
 }
 
+#popup-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#popup-modal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#popup-modal .modal-content {
+  background: #f2f2f2;
+  padding: 80px 0;
+  max-width: 1125px;
+  overflow: scroll;
+  height: 85vh;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#popup-modal .modal-content * {
+  color: #1b252f;
+}
+#popup-modal .modal-content #modal-body {
+  max-width: 680px;
+  margin-inline: auto;
+}
+#popup-modal .modal-content #modal-body .case-tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+#popup-modal .modal-content #modal-body .case-tag li {
+  width: fit-content;
+  border: 1px solid #b59a66;
+  padding: 0px 5px;
+  color: #b59a66;
+}
+#popup-modal .modal-content #modal-body .company-name {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#popup-modal .modal-content #modal-body h2 {
+  font-size: 24px;
+  line-height: 1.6em;
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+#popup-modal .modal-content #modal-body p {
+  margin-bottom: 30px;
+}
+#popup-modal .modal-content #modal-body img {
+  margin-bottom: 20px;
+}
+
 :root {
   /* カラー設定 */
   --color-primary: #3498db;
@@ -1291,10 +1358,11 @@ table {
 }
 #home .section--case .slide-media {
   background-color: #fff;
+  aspect-ratio: 3/2;
 }
 #home .section--case .slide-media img {
   margin: 0 auto;
-  aspect-ratio: 3/2;
+  height: 100%;
   object-fit: contain;
 }
 #home .section--plan {

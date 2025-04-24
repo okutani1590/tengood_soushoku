@@ -53,8 +53,8 @@ function my_script_init()
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', [], null, true);
     wp_enqueue_script('anime-js', get_template_directory_uri() . '/assets/js/anime.js', [], null, true);
     wp_enqueue_script('common-js', get_template_directory_uri() . '/assets/js/common.js', [], null, true);
-    wp_enqueue_script('vue3', 'https://unpkg.com/vue@3.5.13/dist/vue.global.js', [], null, true);
-    wp_enqueue_script('property', get_template_directory_uri() . '/assets/js/property.js', ['vue3'], null, true);
+
+  
   }
 
 

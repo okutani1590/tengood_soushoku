@@ -279,9 +279,10 @@
       }
       .slide-media {
         background-color: #fff;
+        aspect-ratio: 3/2;
         img {
           margin: 0 auto;
-          aspect-ratio: 3 / 2;
+          height: 100%;
           object-fit: contain;
         }
       }
