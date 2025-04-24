@@ -3,6 +3,8 @@
 <div class="page_wrapper">
     <?php if (is_page('contact')): ?>
     <?php get_template_part('page/page', 'contact'); ?>
+    <?php elseif (is_page('estimate')): ?>
+    <?php get_template_part('page/page', 'estimate'); ?>
     <?php elseif (is_page('thanks')): ?>
     <?php get_template_part('page/page', 'thanks'); ?>
     <?php else: ?>

@@ -31,26 +31,113 @@
     }
     &--contact {
       .left {
-        width: 50%;
+        width: 45%;
         h2 {
           line-height: 1.6em;
+          * {
+            color: #0d3864;
+          }
           b {
             display: block;
+            font-size: 18px;
+            position: relative;
+            line-height: 1;
+            margin-bottom: 10px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0px;
+              left: -15px;
+              width: 5px;
+              height: 5px;
+              background-color: #0dac9f;
+              border-radius: 50%;
+            }
           }
+          small {
+            font-size: 35px;
+          }
+        }
+        p {
+          color: #0d3864;
         }
       }
       .right {
-        width: 50%;
+        width: 55%;
+
         form {
           table {
             width: 100%;
             tr {
               display: block;
               margin-bottom: 20px;
+              &.plan-select {
+                th {
+                  color: #1b252f;
+                  padding-bottom: 30px;
+                  p {
+                    margin-block: 20px;
+                    color: #1b252f;
+                  }
+                  small {
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 5px;
+                    color: #1b252f;
+                    position: relative;
+                    display: table;
+                    &::before {
+                      content: "※";
+                      display: table-cell;
+                    }
+                  }
+                }
+                td {
+                  flex-direction: column;
+                  color: #1b252f;
+                  span {
+                    margin-left: 0;
+                    font-size: 16px;
+                    color: #1b252f;
+                  }
+                  label {
+                    display: flex;
+                    input {
+                      width: fit-content;
+                      margin-right: 10px;
+                    }
+                  }
+                }
+              }
+
+              &.option-box {
+                margin-top: 80px;
+                th {
+                  display: block;
+                  margin-bottom: 30px;
+                }
+                td {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  span {
+                    width: fit-content;
+                    margin-left: 0;
+                    label {
+                      display: flex;
+                      margin-bottom: 0;
+                      span {
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+              }
               th {
                 text-align: left;
                 padding-right: 40px;
                 min-width: 240px;
+                color: #1b252f;
                 span {
                   display: inline-block;
                   font-size: 12px;
@@ -69,12 +156,13 @@
           }
           label {
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 14px;
 
             span {
               margin-left: 8px;
               font-size: 12px;
+              color: #1b252f;
             }
           }
 
@@ -112,8 +200,6 @@
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-          }
-          button {
             background-color: #0dac9f;
             color: #fff;
           }
@@ -130,16 +216,24 @@
             font-size: 18px;
           }
           .privacy {
-            margin-top: 60px;
+            margin-top: 30px;
             margin-bottom: 20px;
             text-align: center;
             font-size: 16px;
             label {
               margin-bottom: 10px;
+              span {
+                font-size: 16px;
+                margin-left: 0;
+              }
+            }
+            p {
+              color: #1b252f;
             }
             a {
               color: #0dac9f;
               padding-right: 5px;
+              font-size: 16px;
             }
           }
         }
@@ -170,6 +264,107 @@
         background-color: #0d3864;
         text-align: center;
         padding: 20px;
+      }
+    }
+  }
+
+  #estimate {
+    .left {
+      p {
+        margin-bottom: 30px;
+      }
+      .item_img {
+        max-width: 400px;
+        ul {
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 10px;
+          li {
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            span {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+            }
+          }
+        }
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal-content {
+        display: block;
+        margin: 100px auto;
+        max-width: 490px;
+        background: #f2f2f2;
+        padding: 40px;
+        position: relative;
+        border-radius: 20px;
+        img {
+          max-width: 280px;
+          margin: 0 auto 30px;
+        }
+
+        table {
+          tr:not(:last-child) {
+            td,
+            th {
+              padding-bottom: 20px;
+            }
+          }
+          td,
+          th {
+            color: #1b252f;
+          }
+          td {
+            padding-right: 60px;
+          }
+        }
+
+        .caption {
+          text-align: left;
+          color: #1b252f;
+          border-bottom: 1px solid #0d3864;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          font-size: 24px;
+        }
+
+        .close {
+          position: absolute;
+          top: 10px;
+          right: 0;
+          color: #1b252f;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          right: 20px;
+          width: fit-content;
+          left: unset;
+          display: block;
+        }
+      }
+    }
+
+    td {
+      span {
+        font-size: 16px;
+        color: #1b252f;
+      }
+      input {
+        max-width: 240px;
+        padding: 12px 20px;
       }
     }
   }

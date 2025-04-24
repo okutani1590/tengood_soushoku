@@ -46,7 +46,7 @@ body {
 }
 
 body#page {
-  background: #1b252f;
+  background: #e2ddd3;
 }
 
 h1,
@@ -617,7 +617,7 @@ table {
 }
 #page .header::before {
   background-image: none;
-  background-color: #020c16;
+  background-color: #c9c4ba;
   opacity: 1;
 }
 
@@ -1866,16 +1866,39 @@ table {
   line-height: 1.8em;
 }
 #page .section--contact .left {
-  width: 50%;
+  width: 45%;
 }
 #page .section--contact .left h2 {
   line-height: 1.6em;
 }
+#page .section--contact .left h2 * {
+  color: #0d3864;
+}
 #page .section--contact .left h2 b {
   display: block;
+  font-size: 18px;
+  position: relative;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+#page .section--contact .left h2 b::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  background-color: #0dac9f;
+  border-radius: 50%;
+}
+#page .section--contact .left h2 small {
+  font-size: 35px;
+}
+#page .section--contact .left p {
+  color: #0d3864;
 }
 #page .section--contact .right {
-  width: 50%;
+  width: 55%;
 }
 #page .section--contact .right form table {
   width: 100%;
@@ -1884,10 +1907,70 @@ table {
   display: block;
   margin-bottom: 20px;
 }
+#page .section--contact .right form table tr.plan-select th {
+  color: #1b252f;
+  padding-bottom: 30px;
+}
+#page .section--contact .right form table tr.plan-select th p {
+  margin-block: 20px;
+  color: #1b252f;
+}
+#page .section--contact .right form table tr.plan-select th small {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #1b252f;
+  position: relative;
+  display: table;
+}
+#page .section--contact .right form table tr.plan-select th small::before {
+  content: "※";
+  display: table-cell;
+}
+#page .section--contact .right form table tr.plan-select td {
+  flex-direction: column;
+  color: #1b252f;
+}
+#page .section--contact .right form table tr.plan-select td span {
+  margin-left: 0;
+  font-size: 16px;
+  color: #1b252f;
+}
+#page .section--contact .right form table tr.plan-select td label {
+  display: flex;
+}
+#page .section--contact .right form table tr.plan-select td label input {
+  width: fit-content;
+  margin-right: 10px;
+}
+#page .section--contact .right form table tr.option-box {
+  margin-top: 80px;
+}
+#page .section--contact .right form table tr.option-box th {
+  display: block;
+  margin-bottom: 30px;
+}
+#page .section--contact .right form table tr.option-box td {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#page .section--contact .right form table tr.option-box td span {
+  width: fit-content;
+  margin-left: 0;
+}
+#page .section--contact .right form table tr.option-box td span label {
+  display: flex;
+  margin-bottom: 0;
+}
+#page .section--contact .right form table tr.option-box td span label span {
+  font-size: 16px;
+}
 #page .section--contact .right form table tr th {
   text-align: left;
   padding-right: 40px;
   min-width: 240px;
+  color: #1b252f;
 }
 #page .section--contact .right form table tr th span {
   display: inline-block;
@@ -1904,12 +1987,13 @@ table {
 }
 #page .section--contact .right form label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 #page .section--contact .right form label span {
   margin-left: 8px;
   font-size: 12px;
+  color: #1b252f;
 }
 #page .section--contact .right form input,
 #page .section--contact .right form select,
@@ -1941,8 +2025,6 @@ table {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-#page .section--contact .right form button {
   background-color: #0dac9f;
   color: #fff;
 }
@@ -1958,7 +2040,7 @@ table {
   font-size: 18px;
 }
 #page .section--contact .right form .privacy {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 16px;
@@ -1966,9 +2048,17 @@ table {
 #page .section--contact .right form .privacy label {
   margin-bottom: 10px;
 }
+#page .section--contact .right form .privacy label span {
+  font-size: 16px;
+  margin-left: 0;
+}
+#page .section--contact .right form .privacy p {
+  color: #1b252f;
+}
 #page .section--contact .right form .privacy a {
   color: #0dac9f;
   padding-right: 5px;
+  font-size: 16px;
 }
 #page .section--thanks h1 {
   text-align: center;
@@ -1994,4 +2084,88 @@ table {
   background-color: #0d3864;
   text-align: center;
   padding: 20px;
+}
+#page #estimate .left p {
+  margin-bottom: 30px;
+}
+#page #estimate .left .item_img {
+  max-width: 400px;
+}
+#page #estimate .left .item_img ul {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+#page #estimate .left .item_img ul li {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+#page #estimate .left .item_img ul li span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#page #estimate .left .modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#page #estimate .left .modal-content {
+  display: block;
+  margin: 100px auto;
+  max-width: 490px;
+  background: #f2f2f2;
+  padding: 40px;
+  position: relative;
+  border-radius: 20px;
+}
+#page #estimate .left .modal-content img {
+  max-width: 280px;
+  margin: 0 auto 30px;
+}
+#page #estimate .left .modal-content table tr:not(:last-child) td,
+#page #estimate .left .modal-content table tr:not(:last-child) th {
+  padding-bottom: 20px;
+}
+#page #estimate .left .modal-content table td,
+#page #estimate .left .modal-content table th {
+  color: #1b252f;
+}
+#page #estimate .left .modal-content table td {
+  padding-right: 60px;
+}
+#page #estimate .left .modal-content .caption {
+  text-align: left;
+  color: #1b252f;
+  border-bottom: 1px solid #0d3864;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+#page #estimate .left .modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #1b252f;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  right: 20px;
+  width: fit-content;
+  left: unset;
+  display: block;
+}
+#page #estimate td span {
+  font-size: 16px;
+  color: #1b252f;
+}
+#page #estimate td input {
+  max-width: 240px;
+  padding: 12px 20px;
 }
