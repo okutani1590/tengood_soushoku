@@ -812,7 +812,7 @@ table {
   }
 }
 .footer__inner--left .f-logo {
-  width: 130px;
+  width: 200px;
   display: block;
 }
 @media screen and (max-width: 1024px) {
