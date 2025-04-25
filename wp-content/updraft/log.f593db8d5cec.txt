@@ -1,0 +1,176 @@
+0000.001 () Opened log file at time: Fri, 25 Apr 2025 02:33:43 +0000 on http://tengood.local
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8 PHP: 8.2.23 (fpm-fcgi, Darwin iMac.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:41 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: ja Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5.5M | 6M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 22505.1 MB
+0000.002 () Restore setup, now closing connection and starting restore over AJAX.
+0000.001 () Opened log file at time: Fri, 25 Apr 2025 02:33:43 +0000 on http://tengood.local
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8 PHP: 8.2.23 (fpm-fcgi, Darwin iMac.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:41 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: ja Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.7M | 6M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 22505.2 MB
+0000.002 () Ensuring WP_Filesystem is setup for a restore
+0000.003 () WP_Filesystem is setup and ready for a restore
+0000.004 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["wp20250421141436_options","wp20250421141436_users","wp20250421141436_usermeta","wp20250421141436_commentmeta","wp20250421141436_comments","wp20250421141436_links","wp20250421141436_postmeta","wp20250421141436_posts","wp20250421141436_term_relationships","wp20250421141436_term_taxonomy","wp20250421141436_termmeta","wp20250421141436_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.005 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.006 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.008 () Entity: db
+0000.008 () restore_backup(backup_file=backup_2025-04-25-1129_tengood__98cb32b326a4-db.gz, type=db, info=a:0:{}, last_one=)
+0000.009 () Unpacking backup... (backup_2025-04-25-1129_tengood__98cb32b326a4-db.gz, 0.2 Mb)
+0000.009 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.010 () Database successfully unpacked
+0000.010 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.010 () Using direct MySQL access; value of use_mysqli is: 1
+0000.011 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.044 () Max packet size: 32 MB
+0000.044 () Entering maintenance mode
+0000.044 () メンテナンスモードを有効化中&#8230;
+0000.048 () Backup of: http://soushoku.tengood.co.jp/cms_wp
+0000.051 () Site home: http://soushoku.tengood.co.jp
+0000.051 () Content URL: http://soushoku.tengood.co.jp/cms_wp/wp-content
+0000.051 () Uploads URL: http://soushoku.tengood.co.jp/cms_wp/wp-content/uploads
+0000.051 () Old table prefix: wp20250421141436_
+0000.051 () Old ABSPATH: /home/users/2/main.jp-99056f8eeb026114/web/soushoku.tengood.co.jp/cms_wp/
+0000.051 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.051 () Site information: multisite=0
+0000.051 () Site information: sql_mode=NO_ENGINE_SUBSTITUTION
+0000.052 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.052 () New table prefix: 8d_
+0000.053 () Processing table (InnoDB): wp20250421141436_options - will restore as: 8d_options
+0000.121 () Atomic restore: dropping original table (wp_options)
+0000.131 () Atomic restore: renaming new table (8d_options) to final table name (wp_options)
+0000.134 () Restoring prior UD configuration (table: wp_options; keys: 102)
+0000.152 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.152 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.152 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.152 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.152 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.152 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.155 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.156 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.157 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.163 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 267, wp-content/plugins/updraftplus/options.php)
+0000.163 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 267, wp-content/plugins/updraftplus/options.php)
+0000.177 () Table prefix has changed: changing options table field(s) accordingly (options)
+0000.178 () Options table fields changed OK
+0000.183 () Search and replacing table: wp_options: rows: 566
+0000.191 () Incomplete object detected in database: stdClass; Search and replace will be skipped for these entries
+0000.193 () Incomplete object detected in database: WpOrg\Requests\Utility\CaseInsensitiveDictionary; Search and replace will be skipped for these entries
+0000.195 () Processing table (InnoDB): wp20250421141436_users - will restore as: 8d_users
+0000.203 () Atomic restore: dropping original table (wp_users)
+0000.207 () Atomic restore: renaming new table (8d_users) to final table name (wp_users)
+0000.211 () Search and replacing table: wp_users: rows: 1
+0000.212 () Processing table (InnoDB): wp20250421141436_usermeta - will restore as: 8d_usermeta
+0000.219 () Atomic restore: dropping original table (wp_usermeta)
+0000.222 () Atomic restore: renaming new table (8d_usermeta) to final table name (wp_usermeta)
+0000.225 () Table prefix has changed: changing usermeta table field(s) accordingly
+0000.226 () Usermeta table fields changed OK
+0000.227 () Search and replacing table: wp_usermeta: rows: 23
+0000.227 () Processing table (InnoDB): wp20250421141436_commentmeta - will restore as: 8d_commentmeta
+0000.233 () Atomic restore: dropping original table (wp_commentmeta)
+0000.237 () Atomic restore: renaming new table (8d_commentmeta) to final table name (wp_commentmeta)
+0000.241 () Search and replacing table: wp_commentmeta: rows: 0
+0000.241 () Processing table (InnoDB): wp20250421141436_comments - will restore as: 8d_comments
+0000.250 () Atomic restore: dropping original table (wp_comments)
+0000.253 () Atomic restore: renaming new table (8d_comments) to final table name (wp_comments)
+0000.258 () Search and replacing table: wp_comments: rows: 1
+0000.258 () Processing table (InnoDB): wp20250421141436_links - will restore as: 8d_links
+0000.266 () Atomic restore: dropping original table (wp_links)
+0000.275 () Atomic restore: renaming new table (8d_links) to final table name (wp_links)
+0000.281 () Search and replacing table: wp_links: rows: 0
+0000.281 () Processing table (InnoDB): wp20250421141436_postmeta - will restore as: 8d_postmeta
+0000.289 () Atomic restore: dropping original table (wp_postmeta)
+0000.293 () Atomic restore: renaming new table (8d_postmeta) to final table name (wp_postmeta)
+0000.297 () Search and replacing table: wp_postmeta: rows: 0
+0000.297 () Processing table (InnoDB): wp20250421141436_posts - will restore as: 8d_posts
+0000.309 () Atomic restore: dropping original table (wp_posts)
+0000.313 () Atomic restore: renaming new table (8d_posts) to final table name (wp_posts)
+0000.318 () Skipping search/replace on GUID column in posts table
+0000.318 () Search and replacing table: wp_posts: rows: 45
+0000.322 () Processing table (InnoDB): wp20250421141436_term_relationships - will restore as: 8d_term_relationships
+0000.327 () Atomic restore: dropping original table (wp_term_relationships)
+0000.330 () Atomic restore: renaming new table (8d_term_relationships) to final table name (wp_term_relationships)
+0000.332 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0000.332 () Processing table (InnoDB): wp20250421141436_term_taxonomy - will restore as: 8d_term_taxonomy
+0000.340 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.343 () Atomic restore: renaming new table (8d_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.347 () Search and replacing table: wp_term_taxonomy: rows: 2
+0000.347 () Processing table (InnoDB): wp20250421141436_termmeta - will restore as: 8d_termmeta
+0000.351 () Atomic restore: dropping original table (wp_termmeta)
+0000.354 () Atomic restore: renaming new table (8d_termmeta) to final table name (wp_termmeta)
+0000.358 () Search and replacing table: wp_termmeta: rows: 0
+0000.358 () Processing table (InnoDB): wp20250421141436_terms - will restore as: 8d_terms
+0000.362 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0000.363 () Unlocking database and leaving maintenance mode
+0000.363 () メンテナンスモードを無効にします…
+0000.363 () Atomic restore: dropping original table (wp_terms)
+0000.368 () Atomic restore: renaming new table (8d_terms) to final table name (wp_terms)
+0000.373 () Search and replacing table: wp_terms: rows: 2
+0000.373 () Finished: lines processed: 45 in 0.36 seconds
+0000.373 () Cleaning up rubbish...
+0000.373 () Begin search and replace (updraftplus_restored_db)
+0000.373 () [Database-replace-site-url] Database: search and replace site URL
+0000.374 () Warning: the database's home URL (http://tengood.local/) is different to what we expected (http://soushoku.tengood.co.jp)
+0000.374 () Database search and replace: replace http://soushoku.tengood.co.jp/cms_wp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace http://soushoku.tengood.co.jp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace http://www.soushoku.tengood.co.jp/cms_wp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace https://www.soushoku.tengood.co.jp/cms_wp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace https://soushoku.tengood.co.jp/cms_wp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace http://www.soushoku.tengood.co.jp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace https://www.soushoku.tengood.co.jp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace https://soushoku.tengood.co.jp in backup dump with http://tengood.local
+0000.374 () Database search and replace: replace /home/users/2/main.jp-99056f8eeb026114/web/soushoku.tengood.co.jp/cms_wp in backup dump with /Users/df/Local Sites/tengood/app/public
+0000.375 () Search and replacing table: wp_commentmeta: already done
+0000.375 () Search and replacing table: wp_comments: already done
+0000.375 () Search and replacing table: wp_links: already done
+0000.375 () Search and replacing table: wp_options: already done
+0000.375 () Search and replacing table: wp_postmeta: already done
+0000.375 () Search and replacing table: wp_posts: already done
+0000.375 () Search and replacing table: wp_term_relationships: already done
+0000.375 () Search and replacing table: wp_term_taxonomy: already done
+0000.375 () Search and replacing table: wp_termmeta: already done
+0000.375 () Search and replacing table: wp_terms: already done
+0000.375 () Search and replacing table: wp_usermeta: already done
+0000.375 () Search and replacing table: wp_users: already done
+0000.378 () Entity: plugins
+0000.378 () restore_backup(backup_file=backup_2025-04-25-1129_tengood__98cb32b326a4-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:59:"/Users/df/Local Sites/tengood/app/public/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0000.378 () Unpacking backup... (backup_2025-04-25-1129_tengood__98cb32b326a4-plugins.zip, 18 MB)
+0000.381 () Unzipping backup_2025-04-25-1129_tengood__98cb32b326a4-plugins.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/b5043368/ using UpdraftPlus_ZipArchive, starting index 0
+0000.871 () Unzip progress: 1002 out of 3957 files (1.6 MB, plugins/google-site-kit/third-party/google/apiclient-services/src/Adsense/ListCustomChannelsResponse.php)
+0001.018 () Unzip progress: 2003 out of 3957 files (23.2 MB, plugins/mw-wp-form/classes/form-fields/class.datepicker.php)
+0001.168 () Unzip progress: 3004 out of 3957 files (42.4 MB, plugins/wp-fastest-cache/css/fonts/statics/flaticon.svg)
+0001.290 () Unzip progress: 3957 out of 3957 files (61.3 MB, plugins/updraftplus/languages/updraftplus-sr_RS.mo)
+0001.293 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.293 () Moving old data: can potentially use wp_filesystem method / -old
+0001.293 () Moving old data out of the way...
+0001.561 () Top-level entities being moved: wordpress-importer, advanced-custom-fields, .DS_Store, smart-custom-fields, index.php, updraftplus, mw-wp-form
+0001.562 () Moving unpacked backup into place...
+0001.972 () Top-level entities being moved: advanced-custom-fields, smart-custom-fields, index.php, akismet, updraftplus, google-site-kit, hello.php, wp-fastest-cache, mw-wp-form, wp-multibyte-patch
+0001.973 () Cleaning up rubbish...
+0001.974 () [WP Fastest Cache] Disabled this plugin: %s: re-activate it manually when you are ready.
+0001.975 () Entity: themes
+0001.975 () restore_backup(backup_file=backup_2025-04-25-1129_tengood__98cb32b326a4-themes.zip, type=themes, info=a:3:{s:4:"path";s:58:"/Users/df/Local Sites/tengood/app/public/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0001.976 () Unpacking backup... (backup_2025-04-25-1129_tengood__98cb32b326a4-themes.zip, 16 MB)
+0001.976 () Unzipping backup_2025-04-25-1129_tengood__98cb32b326a4-themes.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/e486cfa0/ using UpdraftPlus_ZipArchive, starting index 0
+0002.064 () Unzip progress: 246 out of 246 files (16.7 MB, themes/twentytwentyfour/readme.txt)
+0002.065 () Moving old data: filesystem method / updraft_dir is potentially possible
+0002.065 () Moving old data: can potentially use wp_filesystem method / -old
+0002.065 () Moving old data out of the way...
+0002.115 () Top-level entities being moved: .DS_Store, index.php, twentytwentyfive, twentytwentyfour, twentytwentythree, base
+0002.115 () Moving unpacked backup into place...
+0002.137 () Top-level entities being moved: index.php, twentytwentyfour, base
+0002.138 () Cleaning up rubbish...
+0002.139 () Entity: uploads
+0002.139 () restore_backup(backup_file=backup_2025-04-25-1129_tengood__98cb32b326a4-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:59:"/Users/df/Local Sites/tengood/app/public/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0002.139 () Unpacking backup... (backup_2025-04-25-1129_tengood__98cb32b326a4-uploads.zip, 1.5 MB)
+0002.140 () Unzipping backup_2025-04-25-1129_tengood__98cb32b326a4-uploads.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/98f10594/ using UpdraftPlus_ZipArchive, starting index 0
+0002.148 () Unzip progress: 17 out of 17 files (1.5 MB, uploads/2025/04/3837787627ee0d772bb1b8edfaa44872.jpg)
+0002.148 () Moving old data: filesystem method / updraft_dir is potentially possible
+0002.148 () Moving old data: can potentially use wp_filesystem method / -old
+0002.148 () Moving old data out of the way...
+0002.152 () Moving unpacked backup into place...
+0002.154 () Cleaning up rubbish...
+0002.155 () Entity: others
+0002.155 () restore_backup(backup_file=backup_2025-04-25-1129_tengood__98cb32b326a4-others.zip, type=others, info=a:2:{s:4:"path";s:51:"/Users/df/Local Sites/tengood/app/public/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0002.156 () Unpacking backup... (backup_2025-04-25-1129_tengood__98cb32b326a4-others.zip, 1.7 MB)
+0002.156 () Unzipping backup_2025-04-25-1129_tengood__98cb32b326a4-others.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/3c0d2276/ using UpdraftPlus_ZipArchive, starting index 0
+0002.198 () Unzip progress: 135 out of 135 files (6.3 MB, languages/admin-network-ja.l10n.php)
+0002.199 () Cleaning up rubbish...
+0002.207 () Restore successful!
+0002.207 () Restore successful

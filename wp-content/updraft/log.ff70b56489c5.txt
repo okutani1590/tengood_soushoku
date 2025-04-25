@@ -1,0 +1,121 @@
+0000.001 () Opened log file at time: Fri, 25 Apr 2025 02:32:10 +0000 on http://tengood.local
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8 PHP: 8.2.23 (fpm-fcgi, Darwin iMac.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:41 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: ja Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5.5M | 6M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 22574.2 MB
+0000.014 () Restore setup, now closing connection and starting restore over AJAX.
+0000.004 () Opened log file at time: Fri, 25 Apr 2025 02:32:11 +0000 on http://tengood.local
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8 PHP: 8.2.23 (fpm-fcgi, Darwin iMac.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:41 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: ja Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.7M | 8M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 22574.2 MB
+0000.005 () Ensuring WP_Filesystem is setup for a restore
+0000.005 () WP_Filesystem is setup and ready for a restore
+0000.010 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.011 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.013 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.014 () Entity: db
+0000.014 () restore_backup(backup_file=backup_2025-04-25-0230_tengood_28ef97c5f99b-db.gz, type=db, info=a:0:{}, last_one=)
+0000.014 () Unpacking backup... (backup_2025-04-25-0230_tengood_28ef97c5f99b-db.gz, 0.2 Mb)
+0000.014 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.015 () Database successfully unpacked
+0000.015 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.016 () Using direct MySQL access; value of use_mysqli is: 1
+0000.016 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.081 () Max packet size: 32 MB
+0000.081 () Entering maintenance mode
+0000.081 () メンテナンスモードを有効化中&#8230;
+0000.099 () Backup of: http://tengood.local
+0000.099 () Content URL: http://tengood.local/wp-content
+0000.099 () Uploads URL: http://tengood.local/wp-content/uploads
+0000.099 () Old table prefix: wp_
+0000.099 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.100 () Site information: multisite=0
+0000.100 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.101 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.102 () New table prefix: tr_
+0000.103 () Processing table (InnoDB): wp_options - will restore as: tr_options
+0000.237 () Atomic restore: dropping original table (wp_options)
+0000.263 () Atomic restore: renaming new table (tr_options) to final table name (wp_options)
+0000.266 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.272 () Processing table (InnoDB): wp_users - will restore as: tr_users
+0000.296 () Atomic restore: dropping original table (wp_users)
+0000.302 () Atomic restore: renaming new table (tr_users) to final table name (wp_users)
+0000.309 () Processing table (InnoDB): wp_usermeta - will restore as: tr_usermeta
+0000.324 () Atomic restore: dropping original table (wp_usermeta)
+0000.328 () Atomic restore: renaming new table (tr_usermeta) to final table name (wp_usermeta)
+0000.331 () Processing table (InnoDB): wp_commentmeta - will restore as: tr_commentmeta
+0000.340 () Atomic restore: dropping original table (wp_commentmeta)
+0000.347 () Atomic restore: renaming new table (tr_commentmeta) to final table name (wp_commentmeta)
+0000.350 () Processing table (InnoDB): wp_comments - will restore as: tr_comments
+0000.364 () Atomic restore: dropping original table (wp_comments)
+0000.372 () Atomic restore: renaming new table (tr_comments) to final table name (wp_comments)
+0000.377 () Processing table (InnoDB): wp_links - will restore as: tr_links
+0000.384 () Atomic restore: dropping original table (wp_links)
+0000.390 () Atomic restore: renaming new table (tr_links) to final table name (wp_links)
+0000.397 () Processing table (InnoDB): wp_postmeta - will restore as: tr_postmeta
+0000.406 () Atomic restore: dropping original table (wp_postmeta)
+0000.408 () Atomic restore: renaming new table (tr_postmeta) to final table name (wp_postmeta)
+0000.411 () Processing table (InnoDB): wp_posts - will restore as: tr_posts
+0000.429 () Atomic restore: dropping original table (wp_posts)
+0000.459 () Atomic restore: renaming new table (tr_posts) to final table name (wp_posts)
+0000.466 () Processing table (InnoDB): wp_term_relationships - will restore as: tr_term_relationships
+0000.477 () Atomic restore: dropping original table (wp_term_relationships)
+0000.480 () Atomic restore: renaming new table (tr_term_relationships) to final table name (wp_term_relationships)
+0000.484 () Processing table (InnoDB): wp_term_taxonomy - will restore as: tr_term_taxonomy
+0000.492 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.515 () Atomic restore: renaming new table (tr_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.519 () Processing table (InnoDB): wp_termmeta - will restore as: tr_termmeta
+0000.526 () Atomic restore: dropping original table (wp_termmeta)
+0000.530 () Atomic restore: renaming new table (tr_termmeta) to final table name (wp_termmeta)
+0000.534 () Processing table (InnoDB): wp_terms - will restore as: tr_terms
+0000.547 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0000.558 () Unlocking database and leaving maintenance mode
+0000.558 () メンテナンスモードを無効にします…
+0000.558 () Atomic restore: dropping original table (wp_terms)
+0000.561 () Atomic restore: renaming new table (tr_terms) to final table name (wp_terms)
+0000.564 () Finished: lines processed: 44 in 0.54 seconds
+0000.564 () Cleaning up rubbish...
+0000.564 () Begin search and replace (updraftplus_restored_db)
+0000.564 () [Database-replace-site-url] Database: search and replace site URL
+0000.564 () This option was not selected.
+0000.566 () Entity: plugins
+0000.566 () restore_backup(backup_file=backup_2025-04-25-0230_tengood_28ef97c5f99b-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:59:"/Users/df/Local Sites/tengood/app/public/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0000.567 () Unpacking backup... (backup_2025-04-25-0230_tengood_28ef97c5f99b-plugins.zip, 13.7 MB)
+0000.567 () Unzipping backup_2025-04-25-0230_tengood_28ef97c5f99b-plugins.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/20ff632d/ using UpdraftPlus_ZipArchive, starting index 0
+0001.043 () Unzip progress: 1002 out of 2312 files (24 MB, plugins/advanced-custom-fields/includes/fields/class-acf-field-select.php)
+0001.180 () Unzip progress: 2003 out of 2312 files (43.9 MB, plugins/updraftplus/includes/get-cpanel-quota-usage.pl)
+0001.218 () Unzip progress: 2312 out of 2312 files (47.1 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/Command/LocationVisitor/Request/AbstractRequestVisitor.php)
+0001.220 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.220 () Moving old data: can potentially use wp_filesystem method / -old
+0001.220 () Moving old data out of the way...
+0001.482 () Top-level entities being moved: wordpress-importer, advanced-custom-fields, .DS_Store, smart-custom-fields, index.php, updraftplus, mw-wp-form
+0001.483 () Moving unpacked backup into place...
+0001.724 () Top-level entities being moved: wordpress-importer, advanced-custom-fields, .DS_Store, smart-custom-fields, index.php, updraftplus, mw-wp-form
+0001.725 () Cleaning up rubbish...
+0001.726 () Entity: themes
+0001.726 () restore_backup(backup_file=backup_2025-04-25-0230_tengood_28ef97c5f99b-themes.zip, type=themes, info=a:3:{s:4:"path";s:58:"/Users/df/Local Sites/tengood/app/public/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0001.727 () Unpacking backup... (backup_2025-04-25-0230_tengood_28ef97c5f99b-themes.zip, 25.8 MB)
+0001.727 () Unzipping backup_2025-04-25-0230_tengood_28ef97c5f99b-themes.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/68efe7e8/ using UpdraftPlus_ZipArchive, starting index 0
+0001.890 () Unzip progress: 563 out of 563 files (27.2 MB, themes/.DS_Store)
+0001.891 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.891 () Moving old data: can potentially use wp_filesystem method / -old
+0001.891 () Moving old data out of the way...
+0001.963 () Top-level entities being moved: .DS_Store, index.php, twentytwentyfive, twentytwentyfour, twentytwentythree, base
+0001.963 () Moving unpacked backup into place...
+0002.026 () Top-level entities being moved: .DS_Store, index.php, twentytwentyfive, twentytwentyfour, twentytwentythree, base
+0002.026 () Cleaning up rubbish...
+0002.027 () Entity: uploads
+0002.027 () restore_backup(backup_file=backup_2025-04-25-0230_tengood_28ef97c5f99b-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:59:"/Users/df/Local Sites/tengood/app/public/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0002.028 () Unpacking backup... (backup_2025-04-25-0230_tengood_28ef97c5f99b-uploads.zip, 8.6 MB)
+0002.028 () Unzipping backup_2025-04-25-0230_tengood_28ef97c5f99b-uploads.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/d6cbac51/ using UpdraftPlus_ZipArchive, starting index 0
+0002.057 () Unzip progress: 47 out of 47 files (8.6 MB, uploads/2025/04/single_img02.png)
+0002.059 () Moving old data: filesystem method / updraft_dir is potentially possible
+0002.059 () Moving old data: can potentially use wp_filesystem method / -old
+0002.059 () Moving old data out of the way...
+0002.064 () Moving unpacked backup into place...
+0002.068 () Cleaning up rubbish...
+0002.069 () Entity: others
+0002.069 () restore_backup(backup_file=backup_2025-04-25-0230_tengood_28ef97c5f99b-others.zip, type=others, info=a:2:{s:4:"path";s:51:"/Users/df/Local Sites/tengood/app/public/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0002.070 () Unpacking backup... (backup_2025-04-25-0230_tengood_28ef97c5f99b-others.zip, 1.1 MB)
+0002.070 () Unzipping backup_2025-04-25-0230_tengood_28ef97c5f99b-others.zip to /Users/df/Local Sites/tengood/app/public/wp-content/upgrade/d88faddd/ using UpdraftPlus_ZipArchive, starting index 0
+0002.102 () Unzip progress: 75 out of 75 files (4.3 MB, .DS_Store)
+0002.104 () Cleaning up rubbish...
+0002.110 () Restore successful!
+0002.110 () Restore successful

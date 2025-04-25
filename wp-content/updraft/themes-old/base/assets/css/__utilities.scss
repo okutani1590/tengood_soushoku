@@ -1,0 +1,33 @@
+@import "variables/_mixin";
+@import "variables/_sizes";
+@import "variables/_colors";
+
+:root {
+  /* カラー設定 */
+  --color-primary: #3498db;
+  --color-secondary: #2ecc71;
+  --color-accent: #e74c3c;
+  --color-background: #ffffff;
+  --color-text: #fff;
+
+  /* フォント設定 */
+  --base-font: "Noto Serif JP", serif;
+  --sub-font: "Noto Sans", sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 24px;
+
+  /* スペーシング */
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+
+  /* ボーダー・シャドウ */
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

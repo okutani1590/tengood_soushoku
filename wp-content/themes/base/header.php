@@ -19,9 +19,11 @@
         <?php endif; ?>
         <header class="header">
             <div class="header__inner">
-                <i class="header__logo"><img
-                        src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg"
-                        alt="RBD" /></i>
+                <i class="header__logo">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg"
+                            alt="RBD" />
+                    </a> </i>
 
 
                 <ul class="sp header__sns">
