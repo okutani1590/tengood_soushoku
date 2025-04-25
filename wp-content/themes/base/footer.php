@@ -1,3 +1,8 @@
+<div class="sp sp-contact-nav">
+    <a href="<?php echo home_url(''); ?>/estimate" class="">カンタンお見積り</a>
+    <a href="<?php echo home_url(''); ?>/contact" class="">無料相談</a>
+</div>
+
 <footer class="footer">
     <div class="footer__inner flex">
         <div class="footer__inner--left">
@@ -5,7 +10,7 @@
                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg" alt="" /></a>
             <div class="company-info">
                 <span>運営会社：株式会社テングッド</span>
-                <a href=""> コーポレートサイト </a>
+                <a href="https://tengood.co.jp/" target="_blank"> コーポレートサイト </a>
             </div>
         </div>
         <div class="footer__inner--right">
@@ -40,7 +45,7 @@
                         <a href=""> プライバシーポリシー </a>
                     </li>
                     <li class="footer__inner--nav--item">
-                        <a href=""> お問い合わせ </a>
+                        <a href="<?php echo home_url(''); ?>/contact">無料相談 </a>
                     </li>
                 </ul>
             </div>

@@ -138,6 +138,19 @@ table {
   position: relative;
   font-family: var(--sub-font);
   font-weight: 500;
+  &--estimate {
+    background: #b59a66;
+    border: 1px solid #b59a66;
+    @media (hover: hover) {
+      &:hover {
+        color: #b59a66 !important;
+        border: 1px solid #b59a66 !important;
+        &::before {
+          background-color: #b59a66 !important;
+        }
+      }
+    }
+  }
   @media (hover: hover) {
     &:hover {
       background: #fff;
@@ -196,6 +209,42 @@ table {
       padding-right: 30px;
       @include mq(sp) {
         padding-right: 15px;
+      }
+
+      .btn_area {
+        margin-top: 20px;
+        margin-left: 45px;
+        gap: 15px;
+        @include mq(sp) {
+          flex-direction: column;
+          margin-left: 0;
+        }
+        a {
+          margin: 0 !important;
+          width: 240px;
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+      small {
+        color: #39393e;
+        display: block;
+        margin-top: 20px;
+        margin-left: 55px;
+        font-size: 12px;
+        display: table;
+        @include mq(sp) {
+          margin-left: 35px;
+        }
+        &::before {
+          content: "※";
+          display: table-cell;
+        }
+      }
+      @include mq(sp) {
+        .answer {
+          font-size: 14px;
+        }
       }
     }
     &::before,
@@ -287,6 +336,9 @@ table {
       gap: 20px;
       align-items: baseline;
       line-height: 1.8em;
+      @include mq(sp) {
+        gap: 10px;
+      }
       &::before {
         content: "A";
         width: 35px;
@@ -300,6 +352,12 @@ table {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mq(sp) {
+          width: 28px;
+          height: 28px;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -468,6 +526,9 @@ table {
   &__logo {
     display: block;
     margin-right: auto;
+    @include mq(sp) {
+      max-width: 120px;
+    }
   }
 
   @include mq(sp) {
@@ -519,7 +580,7 @@ table {
           @media (hover: hover) {
             &:hover {
               background-position: bottom left;
-              background-size: 100%;
+              background-size: 100% 1px; /* 下線の横幅を100%にする */
             }
           }
         }
@@ -544,22 +605,24 @@ table {
         display: block;
         padding: 15px 0;
         font-size: 14px;
+        width: 100%;
+        text-align: center;
       }
 
-      &::after {
-        content: "";
-        background-color: #ffffff;
-      }
+      // &::after {
+      //   content: "";
+      //   background-color: #ffffff;
+      // }
 
       &:nth-child(1) {
         background-color: #b59a66;
         border: 1px solid #b59a66;
 
-        &::after {
-          background: url(../images/common/file_icon.svg) no-repeat center;
-          width: 21px;
-          height: 24px;
-        }
+        // &::after {
+        //   background: url(../images/common/file_icon.svg) no-repeat center;
+        //   width: 21px;
+        //   height: 24px;
+        // }
 
         @media (hover: hover) {
           &:hover {
@@ -574,11 +637,11 @@ table {
         background-color: #0dac9f;
         border: 1px solid #0dac9f;
 
-        &::after {
-          background: url(../images/common/mail_icon.svg) no-repeat center;
-          width: 16px;
-          height: 12px;
-        }
+        // &::after {
+        //   background: url(../images/common/mail_icon.svg) no-repeat center;
+        //   width: 16px;
+        //   height: 12px;
+        // }
 
         @media (hover: hover) {
           &:hover {
@@ -646,6 +709,9 @@ table {
       display: block;
       right: 0;
       .nav__list {
+        @include mq(sp) {
+          padding-inline: 25px;
+        }
         li {
           margin-bottom: 35px;
           width: 100%;
@@ -774,6 +840,7 @@ table {
       overflow: hidden;
       @include mq(sp) {
         width: 100%;
+        height: 170px;
       }
       border-radius: 5px;
       text-align: center;
@@ -787,6 +854,12 @@ table {
       img {
         display: block;
         margin: 0 auto;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-content: center;
       }
 
       &:nth-child(2) {
@@ -835,12 +908,33 @@ table {
   }
 }
 
+.sp-contact-nav {
+  display: flex;
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+
+  z-index: 9;
+  a {
+    padding: 20px 0px;
+    text-align: center;
+    display: block;
+    width: 50%;
+    &:nth-child(1) {
+      background-color: #b59a66;
+    }
+    &:nth-child(2) {
+      background-color: #0dac9f;
+    }
+  }
+}
+
 .footer {
   background: #0e3864;
   background: linear-gradient(135deg, rgba(14, 56, 100, 1) 0%, rgba(0, 0, 0, 1) 100%);
   padding-block: 70px 40px;
   @include mq(sp) {
-    padding-block: 40px 20px;
+    padding-block: 40px 100px;
   }
   &__inner {
     max-width: 1125px;
@@ -862,8 +956,8 @@ table {
         display: block;
         @include mq(sp) {
           margin-inline: auto;
-          margin-bottom: 15px;
-          max-width: 100px;
+          margin-bottom: 20px;
+          max-width: 120px;
         }
         img {
           width: 100%;
@@ -890,6 +984,7 @@ table {
           justify-content: center;
           align-items: center;
           gap: 5px;
+
           @include mq(sp) {
             margin-inline: auto;
           }
@@ -902,6 +997,16 @@ table {
             width: 12px;
             height: 12px;
             display: block;
+          }
+
+          @media (hover: hover) {
+            &:hover {
+              background-color: #d3b884;
+              color: #fff;
+              &::after {
+                background-color: #fff;
+              }
+            }
           }
         }
       }
@@ -938,9 +1043,10 @@ table {
               margin-bottom: 10px;
               a {
                 color: #fff;
-
-                &:hover {
-                  text-decoration: underline;
+                @media (hover: hover) {
+                  &:hover {
+                    text-decoration: underline;
+                  }
                 }
               }
             }
@@ -955,7 +1061,7 @@ table {
       gap: 15px;
       @include mq(sp) {
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
         margin-block: 20px 30px;
       }
     }
@@ -1003,7 +1109,7 @@ table {
       width: fit-content;
       margin-left: auto;
       @include mq(sp) {
-        font-size: 10px;
+        font-size: 9px;
         margin: 0 auto;
       }
     }

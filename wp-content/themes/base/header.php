@@ -51,10 +51,10 @@
                     <div class="contact-box sp">
                         <ul class="contact flex">
                             <li class="contact_link">
-                                <a href="#">資料請求</a>
+                                <a href="<?php echo home_url(''); ?>/estimate">カンタンお見積り</a>
                             </li>
                             <li class="contact_link">
-                                <a href="#">お問い合わせ</a>
+                                <a href="<?php echo home_url(''); ?>/contact">無料相談</a>
                             </li>
                         </ul>
                     </div>
@@ -78,10 +78,10 @@
                 </nav>
                 <ul class="contact flex">
                     <li class="contact_link">
-                        <a href="#">資料請求</a>
+                        <a href="<?php echo home_url(''); ?>/estimate">カンタンお見積り</a>
                     </li>
                     <li class="contact_link">
-                        <a href="#">お問い合わせ</a>
+                        <a href="<?php echo home_url(''); ?>/contact">無料相談</a>
                     </li>
                 </ul>
             </div>
