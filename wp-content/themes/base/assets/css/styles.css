@@ -472,11 +472,13 @@ table {
 @media screen and (min-width: 1025px) {
   .header.is-sticky {
     backdrop-filter: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .header.is-sticky::before,
   .header.is-sticky .header__nav {
-    opacity: 0;
+    opacity: 0 !important;
     visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .header::before {
     content: "";
@@ -1206,8 +1208,6 @@ table {
 #home .fv__container--left {
   width: 50%;
   padding: 80px 0px 80px 0px;
-  background: url(../images/top/fv_bg.jpg) no-repeat center center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2111,6 +2111,9 @@ table {
   display: block;
   margin-bottom: 20px;
 }
+#page .section--contact .right form table tr.plan-select {
+  margin-top: 60px;
+}
 #page .section--contact .right form table tr.plan-select th {
   color: #1b252f;
   padding-bottom: 30px;
@@ -2217,6 +2220,17 @@ table {
 #page .section--contact .right form input[type=checkbox] {
   width: auto;
   margin-right: 8px;
+}
+#page .section--contact .right form input[type=number] {
+  -moz-appearance: number-input;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#page .section--contact .right form input[type=number]::-webkit-inner-spin-button,
+#page .section--contact .right form input[type=number]::-webkit-outer-spin-button {
+  opacity: 1 !important;
+  -webkit-appearance: inner-spin-button;
+  appearance: auto;
 }
 #page .section--contact .right form input[type=submit],
 #page .section--contact .right form button {
@@ -2372,4 +2386,9 @@ table {
 #page #estimate td input {
   max-width: 240px;
   padding: 12px 20px;
+}
+
+.error {
+  color: #b70000 !important;
+  font-size: 14px;
 }

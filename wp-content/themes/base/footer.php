@@ -1,6 +1,8 @@
-<div class="sp sp-contact-nav">
-    <a href="<?php echo home_url(''); ?>/estimate" class="">カンタンお見積り</a>
-    <a href="<?php echo home_url(''); ?>/contact" class="">無料相談</a>
+<div class="sp">
+    <div class="sp-contact-nav">
+        <a href="<?php echo home_url(''); ?>/estimate" class="">カンタンお見積り</a>
+        <a href="<?php echo home_url(''); ?>/contact" class="">無料相談</a>
+    </div>
 </div>
 
 <footer class="footer">
@@ -65,97 +67,15 @@
         </div>
     </div>
 </footer>
+
+
+<?php if ( is_home() || is_front_page() ) : ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollToPlugin.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/topscroll.js"></script>
+<?php endif; ?>
 
-<script>
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-const sections = gsap.utils.toArray(".sticky");
-const dots = document.querySelectorAll(".dot");
-const pagination = document.querySelector(".pagination");
-
-sections.forEach((section, i) => {
-    const id = section.getAttribute("id");
-
-    // セクションを固定表示（ピン）
-    ScrollTrigger.create({
-        trigger: section,
-        start: "top top",
-        pin: true,
-        pinSpacing: id === "feature03", // feature03 のときだけ pinSpacing を true
-        scrub: false,
-        anticipatePin: 1,
-        markers: false,
-    });
-
-    // 各セクション内のテキストをアニメーション
-    gsap.from(section.querySelector(".text-box"), {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: section,
-            start: "top center",
-            toggleActions: "play none none reverse",
-        },
-    });
-
-    // ドットとスクロール位置の連動
-    ScrollTrigger.create({
-        trigger: section,
-        start: "top center",
-        end: "bottom center",
-        onEnter: () => activateDot(i),
-        onEnterBack: () => activateDot(i),
-    });
-});
-
-// ドットをクリックしたときのスクロール動作
-// オプション強化版：ズレる場合に再補正
-dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-        const targetId = dot.getAttribute("data-target");
-        const target = document.getElementById(targetId);
-
-        ScrollTrigger.refresh(true);
-
-        gsap.to(window, {
-            scrollTo: target,
-            duration: 1,
-            ease: "power2.inOut",
-            onComplete: () => {
-                ScrollTrigger.refresh();
-                // 念のためもう一度少しだけscrollToで再補正
-                gsap.to(window, {
-                    scrollTo: target,
-                    duration: 0.2,
-                    ease: "none",
-                });
-            },
-        });
-    });
-});
-
-// ドットのアクティブ切り替え
-function activateDot(index) {
-    dots.forEach((dot) => dot.classList.remove("active"));
-    dots[index].classList.add("active");
-}
-
-// pagination表示の制御
-ScrollTrigger.create({
-    trigger: "#feature",
-    start: "top top",
-    end: "bottom bottom",
-    onEnter: () => pagination.classList.add("show"),
-    onEnterBack: () => pagination.classList.add("show"),
-    onLeave: () => pagination.classList.remove("show"),
-    onLeaveBack: () => pagination.classList.remove("show"),
-});
-</script>
 <?php wp_footer(); ?>
 </body>
 

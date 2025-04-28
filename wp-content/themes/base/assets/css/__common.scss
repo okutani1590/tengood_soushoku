@@ -487,11 +487,12 @@ table {
   @include mq(pc) {
     &.is-sticky {
       backdrop-filter: none;
-
+      transition: opacity 0.3s ease, visibility 0.3s ease;
       &::before,
       .header__nav {
-        opacity: 0;
+        opacity: 0 !important;
         visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
       }
     }
 
