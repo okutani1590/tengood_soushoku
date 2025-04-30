@@ -120,8 +120,8 @@
                 <b class="jp">Problem</b>
                 こんな課題は<br class="sp">ありませんか？
             </h2>
-            <div class="flex">
-                <div class="flex__item">
+            <div class="grid">
+                <div class="grid__item">
                     <figure>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img01.jpg"
                             alt="＜課題01＞学生にスルーされる…" />
@@ -134,7 +134,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="flex__item">
+                <div class="grid__item">
                     <figure>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img02.jpg"
                             alt="どうせ作るなら…" />
@@ -145,7 +145,7 @@
                     </figure>
                 </div>
 
-                <div class="flex__item">
+                <div class="grid__item">
                     <figure>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img03.jpg"
                             alt="人事側での制作が難しい" />
@@ -244,7 +244,7 @@
             <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
             <h2>ヒアリング面談登録</h2>
             <p>メール・オンライン会議での無料相談も承ります。</p>
-            <a href="<?php echo home_url(''); ?>/contact" class="btn">無料相談</a>
+            <a href="<?php echo home_url(''); ?>/contact" class="btn btn--consultation center">無料相談はこちら</a>
         </div>
     </div>
     <section id="case" class="section section--case">
@@ -308,10 +308,6 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                                             <span class="company-name">
                                                 <?php echo esc_html(get_field('name')); ?>
                                             </span>
-                                            <time class="slide-date"
-                                                datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
-                                                <?php echo esc_html(get_the_date('Y年n月j日')); ?>
-                                            </time>
                                         </div>
 
                                         <h2 class="slide-title"><?php the_title(); ?></h2>
@@ -323,7 +319,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                                         <ul class="case-tag">
                                             <?php foreach ($categories as $category) : ?>
                                             <li class="case-tag--item">
-                                                <span><?php echo esc_html($category->name); ?></span>
+                                                <?php echo esc_html($category->name); ?>
                                             </li>
                                             <?php endforeach; ?>
                                         </ul>
@@ -365,7 +361,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     <div class="inner">
                         <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
                         <p class="plan-message sans-serif">
-                            <span class="sans-serif">最低限のツールを揃えたい</span>企業さま向け
+                            <span class="sans-serif">世界観を創りたい</span><br>企業さま向け
                         </p>
                         <ul class="plan-items">
                             <li class="enabled sans-serif">椅子装飾：8アイテム</li>
@@ -386,7 +382,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     <div class="inner">
                         <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
                         <p class="plan-message sans-serif">
-                            <span class="sans-serif">試しにサービスを利用<br />してみたい</span>企業さま向け
+                            <span class="sans-serif">基本ツールを揃えたい</span><br>企業さま向け
                         </p>
                         <ul class="plan-items">
                             <li class="enabled sans-serif">椅子装飾：4アイテム</li>
@@ -406,13 +402,13 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     <div class="inner">
                         <div class="plan-price"><span class="price">100,000</span><span class="yen">円〜</span></div>
                         <p class="plan-message sans-serif">
-                            <span class="sans-serif">試しにサービスを利用<br />してみたい</span>企業さま向け
+                            <span class="sans-serif">最小限のツールを揃えたい</span><br>企業さま向け
                         </p>
                         <ul class="plan-items">
                             <li class="enabled sans-serif">椅子装飾：4アイテム</li>
                             <li class="enabled sans-serif">ロールアップ：1アイテム</li>
-                            <li class="enabled sans-serif">タペストリー：1アイテム</li>
-                            <li class="enabled sans-serif">テーブルクロス：1アイテム</li>
+                            <li class="disabled sans-serif">タペストリー</li>
+                            <li class="disabled sans-serif">テーブルクロス</li>
                             <li class="disabled sans-serif">マットシート</li>
                             <li class="disabled sans-serif">バックパネル</li>
                         </ul>
@@ -430,10 +426,10 @@ $data_tags = esc_attr(implode(', ', $tag_names));
 
     <div class="cta_area">
         <div class="inner">
-            <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
-            <h2>ヒアリング面談登録</h2>
+            <span>採用ブランディングのプロに<br />丸ごとお任せしませんか？</span>
+            <h2>カンタン自動お見積り</h2>
             <p>メール・オンライン会議での無料相談も承ります。</p>
-            <a href="<?php echo home_url(''); ?>/contact" class="btn">無料相談</a>
+            <a href="<?php echo home_url(''); ?>/estimate" class="btn center">カンタンお見積り</a>
         </div>
     </div>
 
@@ -450,8 +446,11 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                         <h3 class="flow__step--title">
                             カンタンお見積り
                         </h3>
-                        <p class="flow__step--desc sans-serif">下記のボタンからお申し込みください。</p>
-                        <a href="<?php echo home_url(''); ?>/estimate" class="btn btn--estimate">カンタンお見積り</a>
+                        <p class="flow__step--desc sans-serif">下記のボタンからお申し込みください。相談も承ります。</p>
+                        <div class="flex">
+                            <a href="<?php echo home_url(''); ?>/estimate" class="btn">カンタンお見積り</a>
+                            <a href="<?php echo home_url(''); ?>/estimate" class="btn btn--consultation">無料相談はこちら</a>
+                        </div>
                     </li>
 
                     <li class="flow__step--item fadeUpTrigger">
@@ -470,7 +469,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
                                     alt="" />ヒアリング内容を踏まえご提案</span>
                         </h3>
-                        <p class="flow__step--desc sans-serif">正式にご発注いただく前に方向性をおすり合わせすることが可能です。
+                        <p class="flow__step--desc sans-serif">正式にご発注いただく前に方向性をおすり合わせすることが可能です。<br>
                             コンセプトやデザインの方向性を、ディレクターラフをもとにご提案します。</p>
                     </li>
                     <li class="flow__step--item fadeUpTrigger">
@@ -533,8 +532,8 @@ $data_tags = esc_attr(implode(', ', $tag_names));
 
                         </p>
                         <div class="btn_area flex">
-                            <a href="<?php echo home_url(''); ?>/estimate" class="btn btn--estimate">カンタンお見積り</a> <a
-                                href="<?php echo home_url(''); ?>/contact" class="btn">無料相談</a>
+                            <a href="<?php echo home_url(''); ?>/estimate" class="btn">カンタンお見積り</a> <a
+                                href="<?php echo home_url(''); ?>/contact" class="btn btn--consultation">無料相談</a>
                         </div>
                     </div>
                 </div>
@@ -565,50 +564,9 @@ $data_tags = esc_attr(implode(', ', $tag_names));
     <div class="modal-content">
         <button class="modal-close">&times;</button>
         <div id="modal-body">
-            <!-- JavaScriptでここに投稿内容を挿入 -->
         </div>
     </div>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.getElementById("popup-modal");
-    const modalBody = document.getElementById("modal-body");
-    const closeModal = document.querySelector(".modal-close");
-
-    document.querySelectorAll(".open-modal").forEach(el => {
-        el.addEventListener("click", function() {
-            const title = this.dataset.title;
-            const content = this.dataset.content;
-            const image = this.dataset.image;
-            const name = this.dataset.name;
-            const tags = this.dataset.tags;
-
-            // カンマ区切りのタグをリストに変換
-            const tagList = tags.split(',').map(tag => `<li>${tag.trim()}</li>`).join('');
-
-            modalBody.innerHTML = `
-                <ul class="case-tag">${tagList}</ul>
-                <span class="company-name">${name}</span>
-                <h2>${title}</h2>
-                <p>${content}</p>
-            `;
-            modal.style.display = "block";
-        });
-    });
-
-    closeModal.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    // モーダルの外側をクリックして閉じる処理
-    window.addEventListener("click", function(event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-});
-</script>
-
 
 
 

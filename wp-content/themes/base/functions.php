@@ -47,14 +47,12 @@ function my_script_init()
 
   // JSの読み込み
   if (!is_admin()) {
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-latest.min.js?ver=5.2.2', [], null, true);
+    // wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-latest.min.js?ver=5.2.2', [], null, true);
     wp_enqueue_script('jquery2', 'https://code.jquery.com/jquery-3.4.1.min.js', [], null, true);
     wp_enqueue_script('swiper_js', 'https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js', [], null, true);
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', [], null, true);
     wp_enqueue_script('anime-js', get_template_directory_uri() . '/assets/js/anime.js', [], null, true);
     wp_enqueue_script('common-js', get_template_directory_uri() . '/assets/js/common.js', [], null, true);
-
-  
   }
 
 

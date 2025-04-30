@@ -144,7 +144,7 @@
   }
 
   .section {
-    padding: 80px 0px;
+    padding: 100px 0px;
     @include mq(sp) {
       padding: 60px 0px;
       padding-inline: 25px;
@@ -267,6 +267,7 @@
             }
             .company-name {
               font-size: 14px;
+              word-break: auto-phrase;
             }
           }
         }
@@ -286,13 +287,13 @@
           &--item {
             width: fit-content;
             border: 1px solid #b59a66;
-            padding: 0px 5px;
-            span {
-              color: #b59a66;
-              font-size: 14px;
-              @include mq(sp) {
-                font-size: 12px;
-              }
+            padding: 5px;
+            color: #b59a66;
+            font-size: 14px;
+            @include mq(sp) {
+              font-size: 12px;
+              line-height: 1;
+              display: block;
             }
           }
         }
@@ -321,6 +322,8 @@
       padding-bottom: 120px;
       @include mq(sp) {
         padding-bottom: 60px;
+        background: url(../images/top/plan_bg_sp.jpg) no-repeat center center;
+        background-size: cover;
       }
       .section__container {
         max-width: 1000px;
@@ -519,9 +522,12 @@
 
     &--flow {
       background-color: #e2ddd3;
+
       .section__container {
         display: flex;
+        width: 90%;
         @include mq(sp) {
+          width: 100%;
           flex-direction: column;
         }
         .left {
@@ -548,7 +554,7 @@
         .flow__step {
           &--item {
             background-color: #f5f4f2;
-            padding: 40px 60px 40px 120px;
+            padding: 40px 40px 40px 105px;
             position: relative;
             @include mq(sp) {
               padding: 60px 25px 30px;
@@ -573,14 +579,25 @@
                 margin-bottom: 0;
               }
             }
+            @include mq(sp) {
+              .flex {
+                flex-direction: column;
+              }
+            }
             .btn {
-              width: 240px;
+              width: 200px;
               font-size: 16px;
-              color: #fff;
               margin-top: 20px;
-              padding: 8px 25px;
+              padding: 12px 25px;
               margin-left: 0;
-              margin-right: auto;
+              margin-right: 10px;
+              text-align: center;
+              @include mq(sp) {
+                width: 100%;
+              }
+              &::before {
+                display: none;
+              }
             }
           }
           &--num {
@@ -604,13 +621,14 @@
             @include mq(sp) {
               flex-direction: column;
               align-items: flex-start;
-              font-size: 16px;
+              font-size: 20px;
               row-gap: 15px;
             }
             span {
               display: flex;
               color: #39393e;
-              font-size: 16px;
+              font-size: 14px;
+              font-weight: 400;
               gap: 5px;
               background: #fff;
               width: fit-content;
@@ -650,7 +668,10 @@
     &--faq {
       background: url(../images/top/faq_bg.jpg) no-repeat center center;
       background-size: cover;
-
+      padding: 140px 0;
+      @include mq(sp) {
+        padding: 80px 0;
+      }
       h2 {
         margin-inline: auto;
       }
@@ -664,6 +685,9 @@
       &--s {
         max-width: 1000px;
         margin: 0 auto;
+        @include mq(sp) {
+          padding-inline: 25px;
+        }
       }
     }
   }
@@ -684,18 +708,14 @@
         }
       }
     }
-    .flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 10px;
-      justify-content: center;
+    .grid {
       margin: 40px 0 0;
       @include mq(sp) {
         flex-direction: column;
       }
       &__item {
         background-color: #0d3864;
-        width: 32.74%;
+
         @include mq(sp) {
           width: 100%;
         }
@@ -725,6 +745,7 @@
 
           img {
             width: 100%;
+            border-radius: 0;
           }
           figcaption {
             font-size: 1.5rem;

@@ -19,35 +19,32 @@
             <div class="grid">
                 <ul class="footer__inner--nav">
                     <li class="footer__inner--nav--item">
-                        <a href=""> トップ </a>
+                        <a href="<?php echo home_url(''); ?>#feature"> 特長 </a>
                     </li>
                     <li class="footer__inner--nav--item">
-                        <a href=""> 課題 </a>
+                        <a href="<?php echo home_url(''); ?>#case"> 導入事例 </a>
                     </li>
                     <li class="footer__inner--nav--item">
-                        <a href=""> 特長 </a>
-                    </li>
-                </ul>
-                <ul class="footer__inner--nav">
-                    <li class="footer__inner--nav--item">
-                        <a href=""> 導入事例 </a>
-                    </li>
-                    <li class="footer__inner--nav--item">
-                        <a href=""> プラン </a>
-                    </li>
-                    <li class="footer__inner--nav--item">
-                        <a href=""> フロー </a>
+                        <a href="<?php echo home_url(''); ?>#plan"> 基本プラン </a>
                     </li>
                 </ul>
                 <ul class="footer__inner--nav">
                     <li class="footer__inner--nav--item">
-                        <a href=""> よくある質問 </a>
+                        <a href="<?php echo home_url(''); ?>#flow"> 制作フロー </a>
+                    </li>
+                    <li class="footer__inner--nav--item">
+                        <a href="<?php echo home_url(''); ?>#faq"> FAQ </a>
                     </li>
                     <li class="footer__inner--nav--item pp">
                         <a href=""> プライバシーポリシー </a>
                     </li>
+                </ul>
+                <ul class="footer__inner--nav">
                     <li class="footer__inner--nav--item">
-                        <a href="<?php echo home_url(''); ?>/contact">無料相談 </a>
+                        <a href="" class="btn "> カンタンお見積り </a>
+                    </li>
+                    <li class="footer__inner--nav--item">
+                        <a href="<?php echo home_url(''); ?>/contact" class="btn btn--consultation">無料相談はこちら </a>
                     </li>
                 </ul>
             </div>
