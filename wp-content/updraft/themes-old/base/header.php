@@ -19,9 +19,11 @@
         <?php endif; ?>
         <header class="header">
             <div class="header__inner">
-                <i class="header__logo"><img
-                        src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg"
-                        alt="RBD" /></i>
+                <i class="header__logo">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/logo.svg"
+                            alt="RBD" />
+                    </a> </i>
 
 
                 <ul class="sp header__sns">
@@ -49,10 +51,10 @@
                     <div class="contact-box sp">
                         <ul class="contact flex">
                             <li class="contact_link">
-                                <a href="#">資料請求</a>
+                                <a href="<?php echo home_url(''); ?>/estimate">カンタンお見積り</a>
                             </li>
                             <li class="contact_link">
-                                <a href="#">お問い合わせ</a>
+                                <a href="<?php echo home_url(''); ?>/contact">無料相談</a>
                             </li>
                         </ul>
                     </div>
@@ -76,10 +78,10 @@
                 </nav>
                 <ul class="contact flex">
                     <li class="contact_link">
-                        <a href="#">資料請求</a>
+                        <a href="<?php echo home_url(''); ?>/estimate">カンタンお見積り</a>
                     </li>
                     <li class="contact_link">
-                        <a href="#">お問い合わせ</a>
+                        <a href="<?php echo home_url(''); ?>/contact">無料相談</a>
                     </li>
                 </ul>
             </div>

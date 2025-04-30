@@ -86,16 +86,4 @@
                 </ul>
             </div>
         </header>
-
-        <script>
-        const header = document.querySelector(".header");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                header.classList.add("is-sticky");
-            } else {
-                header.classList.remove("is-sticky");
-            }
-        });
-        </script>
         <main>

@@ -1,0 +1,15 @@
+0000.003 () Opened log file at time: Wed, 30 Apr 2025 03:35:46 +0000 on http://tengood.local
+0000.003 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8 PHP: 8.2.23 (fpm-fcgi, Darwin iMac.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:41 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: ja Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5.9M | 8M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 14236.8 MB
+0000.073 () Restore setup, now closing connection and starting restore over AJAX.
+0000.018 () Opened log file at time: Wed, 30 Apr 2025 03:35:47 +0000 on http://tengood.local
+0000.019 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8 PHP: 8.2.23 (fpm-fcgi, Darwin iMac.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:41 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: ja Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.9M | 8M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.019 () Free space on disk containing Updraft's temporary directory: 14236.3 MB
+0000.019 () Ensuring WP_Filesystem is setup for a restore
+0000.020 () WP_Filesystem is setup and ready for a restore
+0000.022 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["wp20250421141436_options","wp20250421141436_users","wp20250421141436_usermeta","wp20250421141436_commentmeta","wp20250421141436_comments","wp20250421141436_links","wp20250421141436_postmeta","wp20250421141436_posts","wp20250421141436_term_relationships","wp20250421141436_term_taxonomy","wp20250421141436_termmeta","wp20250421141436_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.023 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.024 () Error message: 以前の復元で未削除のフォルダが存在します (再試行の前にそれらを削除するには、「古いディレクトリの削除」ボタンを使用してください): /Users/df/Local Sites/tengood/app/public/wp-content/updraft/plugins-old
+0000.027 () Restore failed...
+0000.027 () Error message: 以前の復元で未削除のフォルダが存在します (再試行の前にそれらを削除するには、「古いディレクトリの削除」ボタンを使用してください): /Users/df/Local Sites/tengood/app/public/wp-content/updraft/plugins-old
+0000.027 () Restore failed

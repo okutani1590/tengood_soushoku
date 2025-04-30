@@ -1,17 +1,3 @@
-$(function () {
-  $('a[href^="#"]').click(function (e) {
-    e.preventDefault(); // デフォルトの動作をキャンセル
-    var speed = 500; // スクロールのスピード
-    var href = $(this).attr("href"); // クリックされたリンクのhrefを取得
-    var target = $(href); // ターゲットとなる要素を取得
-    if (target.length) {
-      // ターゲットが存在する場合のみ実行
-      var position = target.offset().top; // ターゲットの位置を取得
-      $("html, body").animate({ scrollTop: position }, speed, "swing"); // スムーズスクロール
-    }
-  });
-});
-
 jQuery(function ($) {
   $(".modalbtn").click(function () {
     $(this).toggleClass("active");
@@ -47,31 +33,6 @@ jQuery(function ($) {
     $(this).next(".morecheck_list").slideToggle();
   });
 
-  $(".slider-center").slick({
-    infinite: true,
-    dots: true,
-    arrows: true,
-    slidesToShow: 1,
-    autoplay: true,
-    swipeToSlide: true,
-    centerMode: true,
-    centerPadding: "30%",
-    responsive: [
-      {
-        breakpoint: 821,
-        settings: {
-          centerPadding: "15%",
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          centerPadding: "15%",
-        },
-      },
-    ],
-  });
-
   var state = false;
   var pos;
   $(".modalbtn").click(function () {
@@ -86,6 +47,7 @@ jQuery(function ($) {
     }
   });
 });
+
 //  slider
 $(function () {
   const swiper1 = new Swiper(".swiper1", {
@@ -140,5 +102,17 @@ $(function () {
     var $item = $(this).closest(".accordion__item");
     $item.toggleClass("open");
     $item.find(".accordion__content").slideToggle();
+  });
+});
+
+$(function () {
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      header.classList.add("is-sticky");
+    } else {
+      header.classList.remove("is-sticky");
+    }
   });
 });

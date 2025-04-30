@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - UpdraftPlus: WP Backup &amp; Migration Plugin - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-01 04:24:52+0000\n"
+"PO-Revision-Date: 2025-04-28 10:07:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,339 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - UpdraftPlus: WP Backup &amp; Migration Plugin - Stable (latest release)\n"
+
+#: templates/wp-admin/settings/updraftcentral-connect.php:70
+msgid "I consent to teamupdraft.com account terms and policies"
+msgstr "teamupdraft.com のアカウント規約とポリシーに同意します"
+
+#: templates/wp-admin/settings/temporary-clone.php:56
+msgid "Once you have them, return here to connect to your account."
+msgstr "アカウントを取得したら、ここに戻ってアカウントに接続してください。"
+
+#: templates/wp-admin/settings/temporary-clone.php:56
+msgid "To clone your site, you need %s."
+msgstr "サイトの複製を作成するには、%s が必要です。"
+
+#: templates/wp-admin/settings/migrator-no-migrator.php:9
+msgid "UpdraftPlus Premium can perform a direct site-to-site migration."
+msgstr "UpdraftPlus Premium は、サイト間の直接移行を実行できます。"
+
+#. translators: %s: The reset password link
+#: includes/updraftcentral.php:65
+msgid "reset your password"
+msgstr "パスワードをリセット"
+
+#. translators: %s: The reset password link
+#: includes/updraftcentral.php:65
+msgid "Try again, or %s before connecting again."
+msgstr "もう一度試すか、%s してから再度接続してください。"
+
+#: includes/updraftcentral.php:63
+msgid "Some users were asked to reset their passwords as part of a recent website migration."
+msgstr "一部のユーザーは、最近のサイト移行の一環として、パスワードの再設定を求められました。"
+
+#: includes/updraftcentral.php:62
+msgid "Your email is valid, but your password wasn't recognised."
+msgstr "メールアドレスは有効ですが、パスワードが認識されませんでした。"
+
+#: templates/wp-admin/settings/header.php:25
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#: templates/wp-admin/settings/header.php:16
+msgid "Twitter / X"
+msgstr "Twitter / X"
+
+#: templates/wp-admin/settings/header.php:15
+msgid "Blogs"
+msgstr "ブログ"
+
+#: templates/wp-admin/settings/form-contents.php:348
+msgid "Check this to delete any superfluous backup files from your server after the backup run finishes (i.e. Whilst this option is unchecked, files sent to remote storage will also remain stored locally, and no locally stored files will be deleted in response to any retention rules)."
+msgstr "バックアップ実行の終了後にサーバーから不要なバックアップ ファイルを削除するには、これにチェックを入れます (つまり、このオプションがオフになっている間は、リモート ストレージに送信されたファイルもローカルに保存されたままになり、ローカルに保存されたファイルは保持ルールに従って削除されません)。"
+
+#: templates/wp-admin/settings/form-contents.php:169
+msgid "back up non-WP tables and external databases"
+msgstr "WP 以外のテーブルと外部データベースをバックアップする"
+
+#: templates/wp-admin/settings/form-contents.php:169
+msgid "You can also %s."
+msgstr "%s もできます。"
+
+#: templates/wp-admin/settings/form-contents.php:169
+msgid "Encrypt the database"
+msgstr "データベースの暗号化"
+
+#: templates/wp-admin/settings/form-contents.php:169
+msgid "%s with UpdraftPlus Premium."
+msgstr "UpdraftPlus Premium を使用した %s。"
+
+#. translators: %1$s: translated link text 'backup more files', %2$s: product
+#. link text 'UpdraftPlus Premium'
+#: templates/wp-admin/settings/form-contents.php:153
+msgid "backup more files"
+msgstr "より多くのファイルをバックアップ"
+
+#. translators: %1$s: translated link text 'backup more files', %2$s: product
+#. link text 'UpdraftPlus Premium'
+#: templates/wp-admin/settings/form-contents.php:153
+msgid "You can %1$s e.g. customisations made to WordPress core, wp-config.php or custom directories outside of the normal WordPress structure with %2$s."
+msgstr "%2$s を使用すると、WordPress コア、wp-config.php、または通常の WordPress 構造外のカスタム ディレクトリに対して行われたカスタマイズなどを %1$s できます。"
+
+#. translators: %1$s: translated link text 'backup more files', %2$s: product
+#. link text 'UpdraftPlus Premium'
+#: templates/wp-admin/settings/form-contents.php:153
+msgid "The above includes all WordPress file directories, except for WordPress core which you can download afresh from WordPress.org."
+msgstr "上記には、WordPress.org から新たにダウンロードできる WordPress コアを除くすべての WordPress ファイルディレクトリが含まれます。"
+
+#. translators: $1$s: translatable text ,%2$s: translatable text, %3$s:
+#. translatable text,%4$s: UpdraftPlus Premium product name
+#: templates/wp-admin/settings/form-contents.php:89
+msgid "automatically delete backups as they age"
+msgstr "古くなったバックアップを自動的に削除する"
+
+#. translators: $1$s: translatable text ,%2$s: translatable text, %3$s:
+#. translatable text,%4$s: UpdraftPlus Premium product name
+#: templates/wp-admin/settings/form-contents.php:89
+msgid "incremental backups"
+msgstr "増分バックアップ"
+
+#. translators: $1$s: translatable text ,%2$s: translatable text, %3$s:
+#. translatable text,%4$s: UpdraftPlus Premium product name
+#: templates/wp-admin/settings/form-contents.php:89
+msgid "To %1$s (e.g. if your server is busy in the day and you want to run overnight), to take %2$s, or to %3$s, use %4$s"
+msgstr "%1$s へ (例えば、サーバーが日中混雑していて夜間に実行したい場合)、%2$s を取る、または %3$s へは、%4$s を使用します"
+
+#: templates/wp-admin/advanced/search-replace.php:8
+msgid "For direct site-to-site migration, get %s."
+msgstr "サイト間の直接移行の場合は、%s を取得します。"
+
+#. translators: %1$s is opening <a> tag, %2$s is closing </a> tag, %3$s is the
+#. link text 'Updraftplus Premium'
+#: templates/wp-admin/advanced/lock-admin.php:22
+msgid "To %1$slock access to UpdraftPlus settings%2$s with a password, upgrade to %3$s."
+msgstr "UpdraftPlus 設定へのアクセスをパスワードで %1$sロック%2$sするには、%3$s にアップグレードしてください。"
+
+#: methods/updraftvault.php:538
+msgid "After 1 month, your subscription will renew at a cost of $35 and every 12 months thereafter until you cancel."
+msgstr "1か月後、サブスクリプションは35ドルで更新され、その後はキャンセルするまで12 か月ごとに更新されます。"
+
+#: methods/updraftvault.php:538
+msgid "Cancel at any time."
+msgstr "いつでもキャンセルできます。"
+
+#: methods/updraftvault.php:538
+msgid "<strong>About the '1 month $1 trial':</strong> Pay just $1 for the first month of an annual subscription."
+msgstr "<strong>「1か月1ドルのトライアル」について:</strong> 年間サブスクリプションの最初の1か月は、わずか1ドルをお支払いいただきます。"
+
+#. translators: %1$s: anchor opening tag <a>, %2$s: UpdraftVault product name,
+#. %3$s: anchor closing tag </a>
+#: methods/updraftvault.php:510
+msgid "%1$s %2$s %3$s gives you encrypted storage integrated into UpdraftPlus so you don't need to set up third party storage systems."
+msgstr "%1$s %2$s %3$s では、UpdraftPlus に統合された暗号化ストレージが提供されるため、サードパーティのストレージシステムをセットアップする必要がありません。"
+
+#: methods/updraftvault.php:506
+msgid "Read %s documentation here."
+msgstr "%s のドキュメントをここで読んでください。"
+
+#. translators: %1$s: anchor opening tag <a>, %2$s: UpdraftVault product name,
+#. %3$s: anchor closing tag </a>
+#: methods/updraftvault.php:498
+msgid "%1$s %2$s %3$s gives you encrypted storage integrated into UpdraftPlus so you don’t need to set up third party storage systems."
+msgstr "%1$s %2$s %3$s では、UpdraftPlus に統合された暗号化ストレージが提供されるため、サードパーティのストレージシステムを設定する必要がありません。"
+
+#: methods/ftp.php:120
+msgid "If you want encryption (e.g. you are storing sensitive business data), then choose UpdraftPlus Premium."
+msgstr "暗号化が必要な場合 (機密性の高いビジネスデータを保存している場合など) は、UpdraftPlus Premium を選択してください。"
+
+#: methods/email.php:106
+msgid "Email:"
+msgstr "メール:"
+
+#: methods/addon-not-yet-present.php:128
+msgid "Back up via %s with %s."
+msgstr "%s を使用して %s 経由でバックアップします。"
+
+#: methods/addon-not-yet-present.php:124
+msgid "Back up to %s with %s."
+msgstr "%s で %s までバックアップします。"
+
+#: includes/updraftplus-notices.php:249
+msgid "Hurry, offer ends 31 August."
+msgstr "お急ぎください。オファーは8月31日に終了します。"
+
+#: includes/updraftplus-notices.php:247
+msgid "20% off - Summer Sale"
+msgstr "20%オフ - サマーセール"
+
+#: includes/updraftplus-notices.php:234
+msgid "Hurry, offer ends 31 May."
+msgstr "お急ぎください。オファーは5月31日に終了します。"
+
+#: includes/updraftplus-notices.php:232
+msgid "20% off - Spring Sale"
+msgstr "20%オフ - スプリングセール"
+
+#: includes/updraftplus-notices.php:219
+msgid "Hurry, offer ends 28 January."
+msgstr "お急ぎください。オファーは1月28日に終了します。"
+
+#: includes/updraftplus-notices.php:217
+msgid "20% off - New Year Sale"
+msgstr "20%オフ - 新春セール"
+
+#: includes/updraftplus-notices.php:204
+msgid "Hurry, offer ends 2 December."
+msgstr "お急ぎください。オファーは12月2日に終了します。"
+
+#: includes/updraftplus-notices.php:204 includes/updraftplus-notices.php:219
+#: includes/updraftplus-notices.php:234 includes/updraftplus-notices.php:249
+msgid "at checkout."
+msgstr "購入手続き時に。"
+
+#: includes/updraftplus-notices.php:202
+msgid "20% off - Black Friday Sale"
+msgstr "20%オフ - ブラックフライデーセール"
+
+#: includes/updraftplus-notices.php:180
+msgid "The 'All-In-One' Security plugin from TeamUpdraft."
+msgstr "TeamUpdraft の 'All-In-One' Security プラグイン。"
+
+#: includes/updraftplus-notices.php:173
+msgid "Back up before updates"
+msgstr "更新前のバックアップ"
+
+#: includes/updraftplus-notices.php:169
+msgid "Simple, safe, and hassle-free."
+msgstr "シンプル、安全、そして手間がかかりません。"
+
+#: includes/updraftplus-notices.php:169
+msgid "With UpdraftPlus Premium, your site is backed up before every update."
+msgstr "UpdraftPlus Premium を使用すると、サイトは更新の前に必ずバックアップされます。"
+
+#: includes/updraftplus-notices.php:168
+msgid "Automatically back up before updates"
+msgstr "アップデート前に自動的にバックアップ"
+
+#: includes/updraftplus-notices.php:161
+msgid "YouTube"
+msgstr "YouTube"
+
+#: includes/updraftplus-notices.php:159
+msgid "Twitter/X"
+msgstr "Twitter/X"
+
+#: includes/updraftplus-notices.php:157
+msgid "Follow TeamUpdraft"
+msgstr "TeamUpdraft をフォロー"
+
+#: includes/updraftplus-notices.php:150
+msgid "Translate"
+msgstr "翻訳"
+
+#: includes/updraftplus-notices.php:147
+msgid "Go here for instructions"
+msgstr "手順はこちら"
+
+#: includes/updraftplus-notices.php:147
+msgid "Want to improve UpdraftPlus for speakers of your language?"
+msgstr "あなたの言語を話す人のために UpdraftPlus を改善したいですか ?"
+
+#: includes/updraftplus-notices.php:146
+msgid "Can you translate?"
+msgstr "翻訳できますか ?"
+
+#: includes/updraftplus-notices.php:111
+msgid "Migration"
+msgstr "移行"
+
+#: includes/updraftplus-notices.php:100
+msgid "See premium features"
+msgstr "プレミアム機能を見る"
+
+#: includes/updraftplus-notices.php:96
+msgid "Encrypt the database, lock UpdraftPlus settings to other admins and anonymise backups."
+msgstr "データベースを暗号化し、UpdraftPlus の設定を他の管理者に対してロックし、バックアップを匿名化します。"
+
+#: includes/updraftplus-notices.php:88
+msgid "Amazon S3 enhancement"
+msgstr "Amazon S3の強化"
+
+#: includes/updraftplus-notices.php:84
+msgid "Save money - back up to the infrequent storage class with Premium."
+msgstr "コストを節約 - Premium を使用して、使用頻度の低いストレージクラスにバックアップします。"
+
+#: includes/updraftplus-notices.php:83
+msgid "Backing up to Amazon S3?"
+msgstr "Amazon S3にバックアップしますか ?"
+
+#: includes/updraftplus-notices.php:76
+msgid "Dropbox enhancement"
+msgstr "Dropbox の強化"
+
+#: includes/updraftplus-notices.php:71
+msgid "Backing up to Dropbox?"
+msgstr "Dropbox にバックアップしますか ?"
+
+#: includes/updraftplus-notices.php:64
+msgid "Google Drive enhancement"
+msgstr "Google Drive の強化"
+
+#: includes/updraftplus-notices.php:60 includes/updraftplus-notices.php:72
+msgid "Organise backups with subfolders."
+msgstr "サブフォルダーを使用してバックアップを整理します。"
+
+#: includes/updraftplus-notices.php:59
+msgid "Backing up to Google Drive?"
+msgstr "Google Drive にバックアップしますか ?"
+
+#: includes/updraftplus-notices.php:53 methods/updraftvault.php:538
+msgid "More about UpdraftVault"
+msgstr "UpdraftVault の詳細"
+
+#: includes/updraftplus-notices.php:49
+msgid "UpdraftVault is the secure and convenient place to store your backups."
+msgstr "UpdraftVault は、バックアップを保存するための安全で便利な場所です。"
+
+#: includes/updraftplus-notices.php:48
+msgid "Store your backups with us"
+msgstr "バックアップの保存"
+
+#: includes/updraftplus-notices.php:42
+msgid "Premium Support"
+msgstr "プレミアムサポート"
+
+#: includes/updraftplus-notices.php:38
+msgid "Get direct support from the developers with Premium."
+msgstr "Premium では開発者から直接サポートを受けることができます。"
+
+#: includes/updraftplus-notices.php:37
+msgid "Need help? We've got your back"
+msgstr "助けが必要ですか ? 私たちがお手伝いします"
+
+#: includes/updraftplus-notices.php:29
+msgid "premium support"
+msgstr "プレミアムサポート"
+
+#: includes/updraftplus-notices.php:29
+msgid "clone or migrate your site with ease"
+msgstr "簡単にサイトを複製または移行できます"
+
+#: includes/updraftplus-notices.php:29
+msgid "Backup incremental changes, instead of full backups (saving server resources), %s, get more remote storage locations, %s and more."
+msgstr "完全バックアップの代わりに増分変更をバックアップし (サーバーリソースを節約)、%s、さらに多くのリモートストレージの場所を取得します (%s など)。"
+
+#: includes/updraftplus-notices.php:28
+msgid "restore"
+msgstr "復元"
+
+#: includes/updraftplus-notices.php:28
+msgid "migrate"
+msgstr "移行"
+
+#: includes/updraftplus-notices.php:28
+msgid "%s, %s and %s with %s."
+msgstr "%s、%s、%s と %s。"
 
 #: templates/wp-admin/advanced/cron-events.php:18
 msgid "Next run"
@@ -39,6 +372,11 @@ msgstr "ここでは、UpdraftPlus プラグインによって設定されたス
 #: templates/wp-admin/advanced/tools-menu.php:32
 msgid "Cron events"
 msgstr "Cron イベント"
+
+#. translators: 1: Number of hours, 2: Number of minutes
+#: includes/class-wpadmin-commands.php:922
+msgid "%1$d hours and %2$d minutes"
+msgstr "%1$d時間%2$d分"
 
 #: admin.php:648
 msgid "Sorry, you are not allowed to access this page."
@@ -211,14 +549,27 @@ msgstr "この % では、最新バージョンが WordPress または PHP イ�
 msgid "Learn more"
 msgstr "さらに詳しく"
 
+#: includes/updraftplus-notices.php:206 includes/updraftplus-notices.php:221
+#: includes/updraftplus-notices.php:236 includes/updraftplus-notices.php:251
+msgid "Save 20%% with code %s"
+msgstr "コード %s で 20%% 割引"
+
 #. translators: %s: Plugin/theme type
 #: central/modules/updates.php:735
 msgid "The latest update for this %s has not been tested with the WordPress version installed on the remote site and may have compatibility issues when used."
 msgstr "この %s の最新の更新は、リモートサイトにインストールされている WordPress のバージョンでテストされていないため、使用すると互換性の問題が発生する可能性があります。"
 
+#: central/modules/updates.php:719
+msgid "The minimum PHP version supported by this %1$s is %2$s."
+msgstr "この%1$sでサポートされている最小のPHPバージョンは%2$sです。"
+
 #: central/modules/updates.php:713
 msgid "The latest update for this %s is not compatible with the PHP version installed on the remote site."
 msgstr "この %s の最新の更新は、リモートサイトにインストールされている PHP バージョンと互換性がありません。"
+
+#: central/modules/updates.php:695
+msgid "The minimum WordPress version supported by this %1$s is %2$s."
+msgstr "この%1$sでサポートされている WordPress の最小バージョンは%2$sです。"
 
 #: central/modules/updates.php:689
 msgid "The latest update for this %s is not compatible with the WordPress version installed on the remote site."
@@ -2882,6 +3233,21 @@ msgstr "存在しないページ:"
 msgid "Existing backups"
 msgstr "既存のバックアップ"
 
+#. translators: 1: Last database error, 2: Last executed SQL query.
+#: includes/class-database-utility.php:678
+msgid "An error occurred while attempting to retrieve the routine SQL/DDL statement (%1$s %2$s)"
+msgstr "ルーチン SQL/DDL ステートメント (%1$s %2$s) を取得中にエラーが発生しました"
+
+#. translators: 1: Last database error, 2: Additional error details.
+#: includes/class-database-utility.php:665
+msgid "An error occurred while attempting to retrieve routine status (%1$s %2$s)"
+msgstr "ルーチンステータス (%1$s %2$s) を取得しようとした際にエラーが発生しました"
+
+#. translators: 1: Last database error, 2: SQL create function statement.
+#: includes/class-database-utility.php:596
+msgid "An error occurred while attempting to check the support of stored routines creation (%1$s %2$s)"
+msgstr "ストアドルーチン作成のサポートを確認しようとした際にエラーが発生しました (%1$s %2$s)"
+
 #: class-updraftplus.php:5540
 msgid "If you do not want to restore all your database tables, then choose some to exclude here."
 msgstr "すべてのデータベーステーブルを復元したくない場合は、ここで除外するテーブルを選択してください。"
@@ -3008,6 +3374,10 @@ msgstr "%s の詳細については、こちらをご覧ください。"
 #: methods/updraftvault.php:502
 msgid "Connect to your %s account"
 msgstr "%s アカウントに接続"
+
+#: templates/wp-admin/settings/tab-addons.php:45
+msgid "Goes to teamupdraft.com checkout page"
+msgstr "teamupdraft.com の購入手続きページへ移動"
 
 #. translators: %s: UpdraftPlus product name
 #: templates/wp-admin/settings/tab-addons.php:39
@@ -3390,6 +3760,10 @@ msgstr "複製領域:"
 #: templates/wp-admin/settings/form-contents.php:384
 msgid "Read more about Easy Updates Manager"
 msgstr "Easy Updates Manager の詳細について読む"
+
+#: templates/wp-admin/settings/temporary-clone.php:70
+msgid "You can find out more about UpdraftClone keys here."
+msgstr "UpdraftClone keys についての詳細はこちらをご覧ください。"
 
 #: templates/wp-admin/settings/temporary-clone.php:59
 msgid "Or, use an UpdraftClone key"
@@ -4060,6 +4434,10 @@ msgstr "そうでない場合は、詳細を選択すると、新しいアカウ
 #: templates/wp-admin/settings/updraftcentral-connect.php:33
 msgid "If you already have an updraftplus.com account, then enter the details below."
 msgstr "すでに updraftplus.com アカウントをお持ちの場合は、以下に詳細を入力してください。"
+
+#: templates/wp-admin/settings/updraftcentral-connect.php:31
+msgid "Add this website to your UpdraftCentral Cloud dashboard at teamupdraft.com."
+msgstr "このサイトを teamupdraft.com. の UpdraftCentral Cloud ダッシュボードに追加します。"
 
 #: templates/wp-admin/settings/updraftcentral-connect.php:29
 msgid "Login or register for UpdraftCentral Cloud"
@@ -4745,6 +5123,14 @@ msgstr "UpdraftCentral は複数のウェブサイトを一元的に管理、更
 #: includes/updraftplus-notices.php:117
 msgid "Introducing UpdraftCentral"
 msgstr "UpdraftCentral のご案内"
+
+#: includes/updraftplus-notices.php:106
+msgid "Easily migrate or clone your site in minutes"
+msgstr "数分で簡単にサイトを移行または複製"
+
+#: includes/updraftplus-notices.php:95
+msgid "Secure your backups"
+msgstr "バックアップを保護"
 
 #: templates/wp-admin/settings/tab-addons.php:302
 msgid "UpdraftVault storage"
@@ -6987,6 +7373,12 @@ msgstr "データベースオプション"
 msgid "Include in files backup"
 msgstr "バックアップに含めるファイル"
 
+#. translators: $1$s: translatable text ,%2$s: translatable text, %3$s:
+#. translatable text,%4$s: UpdraftPlus Premium product name
+#: templates/wp-admin/settings/form-contents.php:89
+msgid "fix the time at which a backup should take place"
+msgstr "バックアップを実行する時間を指定する"
+
 #: templates/wp-admin/settings/form-contents.php:62
 msgid "Database backup interval"
 msgstr "データベースのバックアップ間隔"
@@ -7321,6 +7713,15 @@ msgstr "または"
 #: templates/wp-admin/settings/downloading-and-restoring.php:77
 msgid "Drop backup files here"
 msgstr "ここへバックアップ用ファイルをドロップ"
+
+#. translators: 1: Software name (WordPress), 2: Required version (3.3)
+#. translators: %1$s: WordPress, %2$s: Version number
+#. translators: %1$s: WordPress  %2$s: version number
+#: templates/wp-admin/settings/downloading-and-restoring.php:71
+#: templates/wp-admin/settings/form-contents.php:191
+#: templates/wp-admin/settings/tab-backups.php:77
+msgid "This feature requires %1$s version %2$s or later"
+msgstr "この機能には%1$sバージョン%2$s以降が必要です"
 
 #: templates/wp-admin/settings/downloading-and-restoring.php:67
 #: templates/wp-admin/settings/tab-backups.php:71

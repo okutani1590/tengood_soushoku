@@ -2,6 +2,12 @@
 <div class="main__inner">
     <!-- よくあるTOPスライド -->
     <div class="fv" id="fv_top">
+        <div class="fv__decoration">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_decoration01.svg"
+                alt="合説ブースは見た目が9割 採用の専門家が手掛ける 合説ブース装飾" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_decoration02.svg"
+                alt="合説ブースは見た目が9割 採用の専門家が手掛ける 合説ブース装飾" />
+        </div>
         <div class="fv__container">
             <div class="fv__container--left">
                 <h1>
@@ -105,98 +111,9 @@
 
         <div class="scroll-infinity">
             <div class="scroll-infinity__wrap">
-                <ul class="scroll-infinity__list scroll-infinity__list--left">
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                </ul>
-                <ul class="scroll-infinity__list scroll-infinity__list--left">
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo01.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo02.svg"
-                            alt="" /></li>
-                    <li class="scroll-infinity__item"><img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/business_logo03.svg"
-                            alt="" /></li>
-                </ul>
             </div>
         </div>
     </div>
-
     <section id="problem" class="section section--problem">
         <div class="section__container">
             <h2 class="section__title en">
@@ -222,9 +139,8 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img02.jpg"
                             alt="どうせ作るなら…" />
                         <figcaption>
-                            <span>＜課題02＞ どうせ作るなら…</span>
-                            <h3>クリエイティブにこだわり、<br><b>センスの良いツール
-                                </b>にしたい。</h3>
+                            <span>＜課題02＞ 人事側での制作が難しい</span>
+                            <h3><b>何を伝えれば</b><br /><b>効果的か</b>わからない。</h3>
                         </figcaption>
                     </figure>
                 </div>
@@ -234,8 +150,10 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/problem_img03.jpg"
                             alt="人事側での制作が難しい" />
                         <figcaption>
-                            <span>＜課題03＞ 人事側での制作が難しい</span>
-                            <h3><b>何を伝えれば</b><br /><b>効果的か</b>わからない</h3>
+                            <span>＜課題03＞ どうせ作るなら…</span>
+                            <h3>クリエイティブにこだわり、<br><b>センスの良いツール
+                                </b>にしたい。</h3>
+
                         </figcaption>
                     </figure>
                 </div>
@@ -250,7 +168,7 @@
                 <div class="text-box">
                     <span class="en">Professional</span>
                     <h3 class="section__title--sub">
-                        採用のプロフェッショナルが担当します。
+                        採用のプロフェッショナル<br class="sp">担当します。
                     </h3>
                     <p class="desc">
                         全員が(一社)総合経営管理協会認定の採用コンサルタントや採用定着士認定を保有。<br>延べ3000社以上のリクナビやマイナビなどの求人広告や採用ブランディングを手がけてきた<br>プロフェッショナルが担当します。
@@ -326,7 +244,7 @@
             <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
             <h2>ヒアリング面談登録</h2>
             <p>メール・オンライン会議での無料相談も承ります。</p>
-            <a href="#" class="btn">カンタンお見積り</a>
+            <a href="<?php echo home_url(''); ?>/contact" class="btn">無料相談</a>
         </div>
     </div>
     <section id="case" class="section section--case">
@@ -427,6 +345,8 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     </div>
                 </div>
             </div>
+            <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/jisseki.pdf"
+                class="btn">その他の採用関連実績はこちら</a>
         </div>
     </section>
 
@@ -503,7 +423,8 @@ $data_tags = esc_attr(implode(', ', $tag_names));
             <p class="desc">
                 各プランのアイテム数の増減やオプション選択は、「お見積りはこちら」より調整が可能です。
             </p>
-            <div class="btn_area"><a href="#" class="btn">お見積りはこちら</a></div>
+            <div class="btn_area"><a href="<?php echo home_url(''); ?>/estimate" class="btn">お見積りはこちら</a>
+            </div>
         </div>
     </section>
 
@@ -512,7 +433,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
             <span>“とりあえず話を聞いてみたい”<br />そんな方も大歓迎です！</span>
             <h2>ヒアリング面談登録</h2>
             <p>メール・オンライン会議での無料相談も承ります。</p>
-            <a href="#" class="btn">カンタンお見積り</a>
+            <a href="<?php echo home_url(''); ?>/contact" class="btn">無料相談</a>
         </div>
     </div>
 
@@ -527,9 +448,10 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     <li class="flow__step--item fadeUpTrigger">
                         <i class="flow__step--num">STEP 01</i>
                         <h3 class="flow__step--title">
-                            カンタンお見積り <a href="" class="btn">カンタンお見積り</a>
+                            カンタンお見積り
                         </h3>
                         <p class="flow__step--desc sans-serif">下記のボタンからお申し込みください。</p>
+                        <a href="<?php echo home_url(''); ?>/estimate" class="btn btn--estimate">カンタンお見積り</a>
                     </li>
 
                     <li class="flow__step--item fadeUpTrigger">
@@ -553,12 +475,12 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     </li>
                     <li class="flow__step--item fadeUpTrigger">
                         <i class="flow__step--num">STEP 04</i>
-                        <h3 class="flow__step--title">ご注文</h3>
-                        <p class="flow__step--desc sans-serif">ロゴデータや素材データご提供</p>
+                        <h3 class="flow__step--title">ご契約・制作</h3>
+                        <p class="flow__step--desc sans-serif">決済完了のご連絡で制作を開始します。（最短1ヶ月で原本をお手元に）</p>
                     </li>
                     <li class="flow__step--item fadeUpTrigger">
                         <i class="flow__step--num">STEP 05</i>
-                        <h3 class="flow__step--title">デザイン開始</h3>
+                        <h3 class="flow__step--title">修正のやりとり・納品</h3>
                         <p class="flow__step--desc sans-serif">製作開始後最短1週間で初稿をアップします。<br /><b
                                 class="sans-serif">※特急対応などは初回ヒアリング時にご相談ください。(特急料金が発生します。)</b></p>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/flow_img01.svg"
@@ -607,8 +529,13 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     </div>
                     <div class="accordion__content">
                         <p class="answer">
-                            可能ですが基本的には初回のヒアリングを推奨しています。当社は、採用の専門家としてお客さまの課題やニーズをお伺いしたうえでご提案することに重きを置いています。お客さまが安心してご発注できるようにお時間をいただければ幸いです。
+                            以下のカンタンお見積りで自動お見積りが可能です。もしご指定の仕様やその他オプションなどがございましたら、「カンタンお見積り」もしくは「無料相談」の概要欄のほうに、お求めの仕様やメールでのやりとりの希望について記入し、お申し込みください。
+
                         </p>
+                        <div class="btn_area flex">
+                            <a href="<?php echo home_url(''); ?>/estimate" class="btn btn--estimate">カンタンお見積り</a> <a
+                                href="<?php echo home_url(''); ?>/contact" class="btn">無料相談</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -620,7 +547,12 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                     </div>
                     <div class="accordion__content">
                         <p class="answer">
-                            プランをベースに、初回のお打ち合わせ内容を踏まえコンセプト、ディレクターラフ、お見積りを共有します。(メールでの郵送だけでなく、オンラインミーティングでのご提案も可能です)</p>
+                            料金はベース金額があります（「プラン」や「カンタンお見積り」を参照）。デザインラフを複数ご提案する際、ベース金額内のアイデアはもちろん、よりクリエイティブにこだわった新たな撮影やイラスト、モデルなどが必要になるアイデアを提案する場合もあります（あるいはお客様からのご希望で）。最終的にアイデアとお見積りを比較した上で、ご希望の方向性でデザインを制作していきます。
+
+                        </p>
+                        <small class="note">
+                            パンフレットなどのオプションの場合も、ご要望をお伺いした上で、別途企画やお見積りをご提案させていただきます。
+                        </small>
                     </div>
                 </div>
             </div>
@@ -637,39 +569,6 @@ $data_tags = esc_attr(implode(', ', $tag_names));
         </div>
     </div>
 </div>
-
-<style>
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-content {
-    background: #fff;
-    padding: 2rem;
-    max-width: 600px;
-    width: 90%;
-    position: relative;
-}
-
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-</style>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("popup-modal");

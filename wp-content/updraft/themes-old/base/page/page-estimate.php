@@ -251,7 +251,7 @@
 
             <div class="right">
                 <div class="form_area">
-                    <?php echo do_shortcode('[mwform_formkey key="67"]'); ?>
+                    <?php echo do_shortcode('[mwform_formkey key="34"]'); ?>
                 </div>
             </div>
         </div>
