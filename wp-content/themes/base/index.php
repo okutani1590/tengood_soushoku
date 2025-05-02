@@ -25,39 +25,39 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide01.jpg"
-                                alt="" />
+                                alt="side01" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide02.jpg"
-                                alt="" />
+                                alt="side02" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide03.jpg"
-                                alt="" />
+                                alt="side03" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
-                                alt="" />
+                                alt="side04" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide05.jpg"
-                                alt="" />
+                                alt="side05" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide06.jpg"
-                                alt="" />
+                                alt="side06" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide07.jpg"
-                                alt="" />
+                                alt="side07" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide08.jpg"
-                                alt="" />
+                                alt="side08" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide09.jpg"
-                                alt="" />
+                                alt="side09" />
                         </div>
                     </div>
                 </div>
@@ -65,45 +65,40 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide10.jpg"
-                                alt="" />
+                                alt="side10" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide11.jpg"
-                                alt="" />
+                                alt="side11" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide12.jpg"
-                                alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide04.jpg"
-                                alt="" />
+                                alt="side12" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide13.jpg"
-                                alt="" />
+                                alt="side13" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide14.jpg"
-                                alt="" />
+                                alt="side14" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide15.jpg"
-                                alt="" />
+                                alt="side15" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide16.jpg"
-                                alt="" />
+                                alt="side16" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide17.jpg"
-                                alt="" />
+                                alt="side17" />
                         </div>
                         <div class="swiper-slide">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/top/fv_slide18.jpg"
-                                alt="" />
+                                alt="side18" />
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -196,7 +191,7 @@
                     </h3>
                     <p class="desc">
                         BtoB広告賞やコピーライターズ賞などの受賞歴を持つクリエイターたちが制作を担当します。<br class="pc">装飾ツールはクリエイティブが命。<br
-                            class="pc">企業のらしさを踏まえたながら、求職者を惹きつける装飾ツールを制作します。
+                            class="pc">企業のらしさを踏まえながら、求職者を惹きつける装飾ツールを制作します。
                     </p>
                     <div class="list">
                         <span>＜在籍スタッフの受賞歴＞</span>
@@ -449,7 +444,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                         <p class="flow__step--desc sans-serif">下記のボタンからお申し込みください。相談も承ります。</p>
                         <div class="flex">
                             <a href="<?php echo home_url(''); ?>/estimate" class="btn">カンタンお見積り</a>
-                            <a href="<?php echo home_url(''); ?>/estimate" class="btn btn--consultation">無料相談はこちら</a>
+                            <a href="<?php echo home_url(''); ?>/contact" class="btn btn--consultation">無料相談はこちら</a>
                         </div>
                     </li>
 
@@ -458,7 +453,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                         <h3 class="flow__step--title">
                             オンラインヒアリング <span class="sans-serif"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
-                                    alt="" />30分~60分程度実施</span>
+                                    alt="チェックマーク" />30分~60分程度実施</span>
                         </h3>
                         <p class="flow__step--desc sans-serif">装飾ツールはもちろん、採用戦略のお困りごともまるっとご相談ください。</p>
                     </li>
@@ -467,7 +462,7 @@ $data_tags = esc_attr(implode(', ', $tag_names));
                         <h3 class="flow__step--title">
                             ご提案・お見積り <span class="sans-serif"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/check_05.svg"
-                                    alt="" />ヒアリング内容を踏まえご提案</span>
+                                    alt="チェックマーク" />ヒアリング内容を踏まえご提案</span>
                         </h3>
                         <p class="flow__step--desc sans-serif">正式にご発注いただく前に方向性をおすり合わせすることが可能です。<br>
                             コンセプトやデザインの方向性を、ディレクターラフをもとにご提案します。</p>

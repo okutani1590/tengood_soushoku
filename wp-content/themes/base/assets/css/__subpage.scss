@@ -10,12 +10,27 @@
   }
 
   .section {
+    @include mq(sp) {
+      &__container {
+        padding-inline: 25px;
+      }
+    }
+    @include mq(sp) {
+      .flex {
+        flex-direction: column;
+        row-gap: 60px;
+        padding-top: 0;
+      }
+    }
     &__container {
       max-width: 1125px;
       margin: 0 auto;
       padding-block: 120px 180px;
       box-sizing: border-box;
       position: relative;
+      @include mq(sp) {
+        padding-block: 60px 80px;
+      }
     }
     &__title {
       font-size: 4.2rem;
@@ -32,6 +47,9 @@
     &--contact {
       .left {
         width: 45%;
+        @include mq(sp) {
+          width: 100%;
+        }
         h2 {
           line-height: 1.6em;
           * {
@@ -56,6 +74,9 @@
           }
           small {
             font-size: 35px;
+            @include mq(sp) {
+              font-size: 24px;
+            }
           }
         }
         p {
@@ -64,7 +85,9 @@
       }
       .right {
         width: 55%;
-
+        @include mq(sp) {
+          width: 100%;
+        }
         form {
           table {
             width: 100%;
@@ -76,9 +99,14 @@
                 th {
                   color: #1b252f;
                   padding-bottom: 30px;
+
+                  @include mq(sp) {
+                    padding-bottom: 15px;
+                  }
                   p {
                     margin-block: 20px;
                     color: #1b252f;
+                    word-break: auto-phrase;
                   }
                   small {
                     font-size: 14px;
@@ -96,6 +124,10 @@
                 td {
                   flex-direction: column;
                   color: #1b252f;
+                  @include mq(sp) {
+                    display: flex;
+                    gap: 10px;
+                  }
                   span {
                     margin-left: 0;
                     font-size: 16px;
@@ -103,9 +135,13 @@
                   }
                   label {
                     display: flex;
+                    align-items: center;
                     input {
                       width: fit-content;
                       margin-right: 10px;
+                      @include mq(sp) {
+                        margin-right: 4px;
+                      }
                     }
                   }
                 }
@@ -121,12 +157,16 @@
                   display: flex;
                   flex-wrap: wrap;
                   gap: 10px;
+                  @include mq(sp) {
+                    gap: 20px 15px;
+                  }
                   span {
                     width: fit-content;
                     margin-left: 0;
                     label {
                       display: flex;
                       margin-bottom: 0;
+                      align-items: center;
                       span {
                         font-size: 16px;
                       }
@@ -139,6 +179,11 @@
                 padding-right: 40px;
                 min-width: 240px;
                 color: #1b252f;
+                @include mq(sp) {
+                  display: block;
+                  padding-right: 0;
+                  margin-bottom: 10px;
+                }
                 span {
                   display: inline-block;
                   font-size: 12px;
@@ -152,6 +197,11 @@
               }
               td {
                 width: 100%;
+                @include mq(sp) {
+                  display: flex;
+                  align-items: center;
+                  gap: 0px;
+                }
               }
             }
           }
@@ -184,9 +234,24 @@
             resize: vertical;
           }
 
-          input[type="checkbox"] {
-            width: auto;
+          input[type="radio"] {
+            width: auto !important;
+            height: auto;
+            padding: 0 !important;
             margin-right: 8px;
+            @include mq(sp) {
+              margin-right: 4px;
+            }
+          }
+
+          input[type="checkbox"] {
+            width: auto !important;
+            height: auto;
+            padding: 0 !important;
+            margin-right: 8px;
+            @include mq(sp) {
+              margin-right: 4px;
+            }
           }
 
           input[type="number"] {
@@ -207,7 +272,6 @@
             width: 100%;
             padding: 14px 0;
             margin-top: 20px;
-
             font-weight: bold;
             border: none;
             border-radius: 6px;
@@ -216,6 +280,9 @@
             transition: background-color 0.3s ease;
             background-color: #0dac9f;
             color: #fff;
+            @include mq(sp) {
+              font-size: 14px;
+            }
           }
 
           a {
@@ -236,6 +303,7 @@
             font-size: 16px;
             label {
               margin-bottom: 10px;
+              align-items: center;
               span {
                 font-size: 16px;
                 margin-left: 0;
@@ -243,6 +311,7 @@
             }
             p {
               color: #1b252f;
+              word-break: auto-phrase;
             }
             a {
               color: #0dac9f;
@@ -256,19 +325,30 @@
     &--thanks {
       h1 {
         text-align: center;
-        font-size: 30px;
+        font-size: 34px;
         margin-bottom: 60px;
+        color: #1b252f;
+        font-weight: bold;
+        @include mq(sp) {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
         small {
-          font-size: 20px;
+          font-size: 22px;
           display: block;
           margin-bottom: 10px;
           line-height: 1;
+          color: #1b252f;
         }
       }
       .desc {
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         margin-bottom: 60px;
+        color: #1b252f;
+        @include mq(sp) {
+          font-size: 16px;
+        }
       }
       a.btn-back {
         display: block;
@@ -292,6 +372,9 @@
         ul {
           grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
           gap: 10px;
+          @include mq(sp) {
+            grid-template-columns: 1fr 1fr;
+          }
           li {
             border-radius: 5px;
             position: relative;
@@ -325,8 +408,12 @@
         padding: 40px;
         position: relative;
         border-radius: 20px;
+        @include mq(sp) {
+          padding: 40px 25px;
+        }
         img {
           max-width: 280px;
+          width: 100%;
           margin: 0 auto 30px;
         }
 
@@ -335,14 +422,28 @@
             td,
             th {
               padding-bottom: 20px;
+              @include mq(sp) {
+                padding-bottom: 30px;
+              }
             }
           }
           td,
           th {
             color: #1b252f;
+            @include mq(sp) {
+              display: block;
+            }
           }
           td {
             padding-right: 60px;
+            @include mq(sp) {
+              padding-right: 0;
+              padding-bottom: 5px !important;
+              border-bottom: 1px solid;
+              margin-bottom: 10px;
+              font-size: 16px;
+              font-weight: 600;
+            }
           }
         }
 
@@ -375,10 +476,21 @@
       span {
         font-size: 16px;
         color: #1b252f;
+        @include mq(sp) {
+          font-size: 14px;
+          display: block;
+        }
+        &.mwform-radio-field {
+          margin-right: auto;
+        }
       }
       input {
         max-width: 240px;
         padding: 12px 20px;
+        @include mq(sp) {
+          max-width: unset;
+          width: 65%;
+        }
       }
     }
   }
@@ -387,4 +499,12 @@
 .error {
   color: #b70000 !important;
   font-size: 14px;
+}
+
+tr.w-100 {
+  @include mq(sp) {
+    input {
+      width: 100% !important;
+    }
+  }
 }

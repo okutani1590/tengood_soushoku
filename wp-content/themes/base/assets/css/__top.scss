@@ -33,6 +33,7 @@
       padding: 0 calc((45 / 1366) * 100vw);
       justify-content: space-between;
       margin-inline: auto;
+      height: 750px;
       @include mq(sp) {
         flex-direction: column-reverse;
         padding-inline: 25px;
@@ -81,7 +82,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 720px;
         width: 100%;
         max-width: calc((580 / 1366) * 100vw);
         position: relative;
@@ -100,7 +100,7 @@
           }
           &.swiper2 {
             left: calc(50% + 10px);
-            top: 0;
+            bottom: 0;
           }
         }
         /* スライドの動き等速 */
@@ -140,6 +140,9 @@
       background-size: cover;
       animation: svelte-9bu12d-logo-list-slider 46s linear infinite;
       background-color: #fff;
+      @include mq(sp) {
+        height: 60px;
+      }
     }
   }
 
@@ -195,7 +198,7 @@
         display: flex;
         justify-content: left;
         gap: 10px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         @include mq(sp) {
           margin-bottom: 25px;
           line-height: 1;
@@ -650,6 +653,7 @@
             font-size: 16px;
             color: #39393e;
             line-height: 1.8em;
+            word-break: auto-phrase;
             @include mq(sp) {
               font-size: 14px;
             }
@@ -794,7 +798,7 @@
           padding-inline: 25px;
         }
         .desc {
-          margin-bottom: 60px;
+          margin-bottom: 45px;
           line-height: 2em;
           @include mq(sp) {
             font-size: 14px;
@@ -806,7 +810,7 @@
           background: linear-gradient(235deg, rgba(46, 61, 77, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
           mix-blend-mode: hard-light;
           width: fit-content;
-          padding: 40px 40px 40px;
+          padding: 25px 40px 25px;
           @include mq(sp) {
             font-size: 12px;
             padding: 30px 25px;
@@ -821,18 +825,24 @@
           }
           p {
             line-height: 1.8em;
+            @media screen and (max-width: 1366px) {
+              font-size: 14px;
+            }
           }
         }
       }
     }
     &01 {
       background: url(../images/top/feature01_bg.jpg) no-repeat center center;
+      background-size: cover;
     }
     &02 {
       background: url(../images/top/feature02_bg.jpg) no-repeat center center;
+      background-size: cover;
     }
     &03 {
       background: url(../images/top/feature03_bg.jpg) no-repeat center center;
+      background-size: cover;
     }
   }
 
@@ -886,6 +896,7 @@
   top: 10px;
   right: 10px;
   background: none;
-  font-size: 2rem;
+  font-size: 40px;
+  color: #0d3864 !important;
   cursor: pointer;
 }

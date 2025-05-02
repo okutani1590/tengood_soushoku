@@ -194,3 +194,10 @@ function custom_admin_styles()
   </style>';
 }
 add_action('admin_head', 'custom_admin_styles');
+
+
+
+function custom_excerpt_more($more) {
+  return '...'; // 任意の文字列に変更可能
+}
+add_filter('excerpt_more', 'custom_excerpt_more');

@@ -30,14 +30,14 @@
 
                 <ul class="sp header__sns">
                     <li class="sns_link">
-                        <a href="#"><img
+                        <a href="https://x.com/tengood0901" target="_blank"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_x_icon.svg"
-                                alt="" /></a>
+                                alt="x" /></a>
                     </li>
                     <li class="sns_link">
-                        <a href="#"><img
+                        <a href="https://www.facebook.com/tengood0901" target="_blank"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_facebook_icon.svg"
-                                alt="" /></a>
+                                alt="facebook" /></a>
                     </li>
                 </ul>
 
@@ -67,14 +67,14 @@
                         <li><a href="<?php echo home_url(); ?>/#flow">制作フロー</a></li>
                         <li><a href="<?php echo home_url(); ?>/#faq">FAQ</a></li>
                         <li class="sns_link pc">
-                            <a href="#"><img
+                            <a href="https://x.com/tengood0901" target="_blank"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_x_icon.svg"
-                                    alt="" /></a>
+                                    alt="x" /></a>
                         </li>
                         <li class="sns_link pc">
-                            <a href="#"><img
+                            <a href="https://www.facebook.com/tengood0901/" target="_blank"><img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/head_facebook_icon.svg"
-                                    alt="" /></a>
+                                    alt="facebook" /></a>
                         </li>
                     </ul>
                 </nav>

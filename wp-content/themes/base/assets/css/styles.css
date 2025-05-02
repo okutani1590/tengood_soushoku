@@ -174,6 +174,17 @@ table {
   border-radius: 5px;
 }
 
+i.new_icon {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(41, 31, 31, 0.6509803922);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 10px 10px 0px;
+  font-size: 20px;
+  line-height: 1;
+}
+
 .accordion__item {
   background: #fff;
   border-radius: 10px;
@@ -515,7 +526,7 @@ table {
     display: flex;
     gap: 10px;
     z-index: 999;
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }
 .header__nav {
@@ -617,34 +628,40 @@ table {
 /* ハンバーガー初期状態（PCでは非表示） */
 .modalbtn {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35px;
-  height: 25px;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  width: 32px;
+  height: 30px;
   border: none;
   background: transparent;
   cursor: pointer;
   z-index: 999;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  flex-wrap: wrap;
 }
 .modalbtn span {
   display: block;
   height: 1px;
   background-color: #fff;
+  width: 100%;
   transition: all 0.3s ease;
 }
 .modalbtn.active span:nth-child(1) {
-  transform: rotate(45deg) translate(10px, 10px);
+  transform: rotate(45deg) translate(9px, 10px);
 }
 .modalbtn.active span:nth-child(2) {
   opacity: 0;
 }
 .modalbtn.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(7px, -8px);
 }
 
 @media screen and (max-width: 1024px) {
   .modalbtn {
     display: flex;
+    gap: 5px;
   }
   .header__nav {
     transition: 0.3s;
@@ -691,11 +708,19 @@ table {
   background-color: #c9c4ba;
   opacity: 1;
 }
+@media screen and (max-width: 1024px) {
+  #page .header {
+    overflow: visible;
+    backdrop-filter: none;
+    background: linear-gradient(180deg, rgb(144, 144, 144) 0%, rgba(255, 255, 255, 0) 100%);
+    padding-block: 10px;
+  }
+}
 
 .cta_area {
   background: #0e3864;
   background: linear-gradient(135deg, rgb(14, 56, 100) 0%, rgb(0, 0, 0) 100%);
-  padding: 7.3206442167vw 0;
+  padding: 5.8565153734vw 0;
   position: relative;
   overflow: hidden;
 }
@@ -816,7 +841,7 @@ table {
 @media screen and (max-width: 1024px) {
   #media .flex li {
     width: 100%;
-    height: 170px;
+    aspect-ratio: 23/12;
   }
 }
 #media .flex li small {
@@ -847,16 +872,9 @@ table {
   margin-bottom: 15px;
 }
 
-#page #media {
-  background: #e2ddd3;
-}
 #page #media .section__container {
   padding: 0;
   text-align: center;
-}
-#page #media .section__container h2 b,
-#page #media .section__container h2 small {
-  color: #0d3864;
 }
 #page #media .section__container h2 b {
   position: relative;
@@ -1129,9 +1147,10 @@ table {
 #popup-modal .modal-content {
   background: #f2f2f2;
   padding: 80px 0;
-  max-width: 1125px;
+  max-width: 870px;
   overflow: scroll;
-  height: 85vh;
+  height: auto;
+  max-height: 85vh;
   border-radius: 10px;
   position: absolute;
   top: 50%;
@@ -1148,7 +1167,7 @@ table {
   color: #1b252f;
 }
 #popup-modal .modal-content #modal-body {
-  max-width: 680px;
+  max-width: 630px;
   margin-inline: auto;
 }
 #popup-modal .modal-content #modal-body .case-tag {
@@ -1265,6 +1284,7 @@ table {
   padding: 0 3.2942898975vw;
   justify-content: space-between;
   margin-inline: auto;
+  height: 750px;
 }
 @media screen and (max-width: 1024px) {
   #home .fv__container {
@@ -1320,7 +1340,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 720px;
   width: 100%;
   max-width: 42.4597364568vw;
   position: relative;
@@ -1345,7 +1364,7 @@ table {
 }
 #home .fv__container--right .swiper.swiper2 {
   left: calc(50% + 10px);
-  top: 0;
+  bottom: 0;
 }
 #home .fv__container--right .swiper-wrapper {
   transition-timing-function: linear;
@@ -1379,6 +1398,11 @@ table {
   background-size: cover;
   animation: svelte-9bu12d-logo-list-slider 46s linear infinite;
   background-color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  #home .fv .scroll-infinity__wrap {
+    height: 60px;
+  }
 }
 #home .section {
   padding: 100px 0px;
@@ -1439,7 +1463,7 @@ table {
   display: flex;
   justify-content: left;
   gap: 10px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 1024px) {
   #home .section__title--line {
@@ -1898,6 +1922,7 @@ table {
   font-size: 16px;
   color: #39393e;
   line-height: 1.8em;
+  word-break: auto-phrase;
 }
 @media screen and (max-width: 1024px) {
   #home .section--flow .section__container .flow__step--desc {
@@ -2052,7 +2077,7 @@ table {
   }
 }
 #home #feature .section__container .inner .desc {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   line-height: 2em;
 }
 @media screen and (max-width: 1024px) {
@@ -2066,7 +2091,7 @@ table {
   background: linear-gradient(235deg, rgba(46, 61, 77, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
   mix-blend-mode: hard-light;
   width: fit-content;
-  padding: 40px 40px 40px;
+  padding: 25px 40px 25px;
 }
 @media screen and (max-width: 1024px) {
   #home #feature .section__container .inner .list {
@@ -2087,14 +2112,22 @@ table {
 #home #feature .section__container .inner .list p {
   line-height: 1.8em;
 }
+@media screen and (max-width: 1366px) {
+  #home #feature .section__container .inner .list p {
+    font-size: 14px;
+  }
+}
 #home #feature01 {
   background: url(../images/top/feature01_bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 #home #feature02 {
   background: url(../images/top/feature02_bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 #home #feature03 {
   background: url(../images/top/feature03_bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 #home #services .flex--alternating .left {
   width: 50%;
@@ -2136,12 +2169,25 @@ table {
   top: 10px;
   right: 10px;
   background: none;
-  font-size: 2rem;
+  font-size: 40px;
+  color: #0d3864 !important;
   cursor: pointer;
 }
 
 #page main {
   padding-top: 95px;
+}
+@media screen and (max-width: 1024px) {
+  #page .section__container {
+    padding-inline: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #page .section .flex {
+    flex-direction: column;
+    row-gap: 60px;
+    padding-top: 0;
+  }
 }
 #page .section__container {
   max-width: 1125px;
@@ -2149,6 +2195,11 @@ table {
   padding-block: 120px 180px;
   box-sizing: border-box;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  #page .section__container {
+    padding-block: 60px 80px;
+  }
 }
 #page .section__title {
   font-size: 4.2rem;
@@ -2164,6 +2215,11 @@ table {
 }
 #page .section--contact .left {
   width: 45%;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .left {
+    width: 100%;
+  }
 }
 #page .section--contact .left h2 {
   line-height: 1.6em;
@@ -2191,11 +2247,21 @@ table {
 #page .section--contact .left h2 small {
   font-size: 35px;
 }
+@media screen and (max-width: 1024px) {
+  #page .section--contact .left h2 small {
+    font-size: 24px;
+  }
+}
 #page .section--contact .left p {
   color: #0d3864;
 }
 #page .section--contact .right {
   width: 55%;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right {
+    width: 100%;
+  }
 }
 #page .section--contact .right form table {
   width: 100%;
@@ -2211,9 +2277,15 @@ table {
   color: #1b252f;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form table tr.plan-select th {
+    padding-bottom: 15px;
+  }
+}
 #page .section--contact .right form table tr.plan-select th p {
   margin-block: 20px;
   color: #1b252f;
+  word-break: auto-phrase;
 }
 #page .section--contact .right form table tr.plan-select th small {
   font-size: 14px;
@@ -2231,6 +2303,12 @@ table {
   flex-direction: column;
   color: #1b252f;
 }
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form table tr.plan-select td {
+    display: flex;
+    gap: 10px;
+  }
+}
 #page .section--contact .right form table tr.plan-select td span {
   margin-left: 0;
   font-size: 16px;
@@ -2238,10 +2316,16 @@ table {
 }
 #page .section--contact .right form table tr.plan-select td label {
   display: flex;
+  align-items: center;
 }
 #page .section--contact .right form table tr.plan-select td label input {
   width: fit-content;
   margin-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form table tr.plan-select td label input {
+    margin-right: 4px;
+  }
 }
 #page .section--contact .right form table tr.option-box {
   margin-top: 80px;
@@ -2255,6 +2339,11 @@ table {
   flex-wrap: wrap;
   gap: 10px;
 }
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form table tr.option-box td {
+    gap: 20px 15px;
+  }
+}
 #page .section--contact .right form table tr.option-box td span {
   width: fit-content;
   margin-left: 0;
@@ -2262,6 +2351,7 @@ table {
 #page .section--contact .right form table tr.option-box td span label {
   display: flex;
   margin-bottom: 0;
+  align-items: center;
 }
 #page .section--contact .right form table tr.option-box td span label span {
   font-size: 16px;
@@ -2271,6 +2361,13 @@ table {
   padding-right: 40px;
   min-width: 240px;
   color: #1b252f;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form table tr th {
+    display: block;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
 }
 #page .section--contact .right form table tr th span {
   display: inline-block;
@@ -2284,6 +2381,13 @@ table {
 }
 #page .section--contact .right form table tr td {
   width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form table tr td {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
 }
 #page .section--contact .right form label {
   display: block;
@@ -2310,9 +2414,27 @@ table {
   min-height: 200px;
   resize: vertical;
 }
-#page .section--contact .right form input[type=checkbox] {
-  width: auto;
+#page .section--contact .right form input[type=radio] {
+  width: auto !important;
+  height: auto;
+  padding: 0 !important;
   margin-right: 8px;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form input[type=radio] {
+    margin-right: 4px;
+  }
+}
+#page .section--contact .right form input[type=checkbox] {
+  width: auto !important;
+  height: auto;
+  padding: 0 !important;
+  margin-right: 8px;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form input[type=checkbox] {
+    margin-right: 4px;
+  }
 }
 #page .section--contact .right form input[type=number] {
   -moz-appearance: number-input;
@@ -2339,6 +2461,12 @@ table {
   background-color: #0dac9f;
   color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  #page .section--contact .right form input[type=submit],
+  #page .section--contact .right form button {
+    font-size: 14px;
+  }
+}
 #page .section--contact .right form a {
   text-decoration: underline;
   font-size: 13px;
@@ -2358,6 +2486,7 @@ table {
 }
 #page .section--contact .right form .privacy label {
   margin-bottom: 10px;
+  align-items: center;
 }
 #page .section--contact .right form .privacy label span {
   font-size: 16px;
@@ -2365,6 +2494,7 @@ table {
 }
 #page .section--contact .right form .privacy p {
   color: #1b252f;
+  word-break: auto-phrase;
 }
 #page .section--contact .right form .privacy a {
   color: #0dac9f;
@@ -2373,19 +2503,34 @@ table {
 }
 #page .section--thanks h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 60px;
+  color: #1b252f;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--thanks h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 #page .section--thanks h1 small {
-  font-size: 20px;
+  font-size: 22px;
   display: block;
   margin-bottom: 10px;
   line-height: 1;
+  color: #1b252f;
 }
 #page .section--thanks .desc {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 60px;
+  color: #1b252f;
+}
+@media screen and (max-width: 1024px) {
+  #page .section--thanks .desc {
+    font-size: 16px;
+  }
 }
 #page .section--thanks a.btn-back {
   display: block;
@@ -2405,6 +2550,11 @@ table {
 #page #estimate .left .item_img ul {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  #page #estimate .left .item_img ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 #page #estimate .left .item_img ul li {
   border-radius: 5px;
@@ -2436,20 +2586,48 @@ table {
   position: relative;
   border-radius: 20px;
 }
+@media screen and (max-width: 1024px) {
+  #page #estimate .left .modal-content {
+    padding: 40px 25px;
+  }
+}
 #page #estimate .left .modal-content img {
   max-width: 280px;
+  width: 100%;
   margin: 0 auto 30px;
 }
 #page #estimate .left .modal-content table tr:not(:last-child) td,
 #page #estimate .left .modal-content table tr:not(:last-child) th {
   padding-bottom: 20px;
 }
+@media screen and (max-width: 1024px) {
+  #page #estimate .left .modal-content table tr:not(:last-child) td,
+  #page #estimate .left .modal-content table tr:not(:last-child) th {
+    padding-bottom: 30px;
+  }
+}
 #page #estimate .left .modal-content table td,
 #page #estimate .left .modal-content table th {
   color: #1b252f;
 }
+@media screen and (max-width: 1024px) {
+  #page #estimate .left .modal-content table td,
+  #page #estimate .left .modal-content table th {
+    display: block;
+  }
+}
 #page #estimate .left .modal-content table td {
   padding-right: 60px;
+}
+@media screen and (max-width: 1024px) {
+  #page #estimate .left .modal-content table td {
+    padding-right: 0;
+    padding-bottom: 5px !important;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 #page #estimate .left .modal-content .caption {
   text-align: left;
@@ -2476,12 +2654,33 @@ table {
   font-size: 16px;
   color: #1b252f;
 }
+@media screen and (max-width: 1024px) {
+  #page #estimate td span {
+    font-size: 14px;
+    display: block;
+  }
+}
+#page #estimate td span.mwform-radio-field {
+  margin-right: auto;
+}
 #page #estimate td input {
   max-width: 240px;
   padding: 12px 20px;
+}
+@media screen and (max-width: 1024px) {
+  #page #estimate td input {
+    max-width: unset;
+    width: 65%;
+  }
 }
 
 .error {
   color: #b70000 !important;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  tr.w-100 input {
+    width: 100% !important;
+  }
 }

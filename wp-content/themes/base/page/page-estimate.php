@@ -20,7 +20,7 @@
                                     <span class="close">&times;</span>
                                     <div class="caption">椅子装飾</div>
                                     <img class=""
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item01.jpg"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item01_modal.jpg"
                                         alt="椅子装飾">
 
                                     <table>
@@ -56,7 +56,7 @@
                                     <span class="close">&times;</span>
                                     <div class="caption">ロールアップ</div>
                                     <img class=""
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item02.jpg"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item02_modal.jpg"
                                         alt="椅子装飾">
 
                                     <table>
@@ -90,7 +90,7 @@
                                     <span class="close">&times;</span>
                                     <div class="caption">タペストリー</div>
                                     <img class=""
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item03.jpg"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item03_modal.jpg"
                                         alt="椅子装飾">
 
                                     <table>
@@ -124,7 +124,7 @@
                                     <span class="close">&times;</span>
                                     <div class="caption">テーブルクロス</div>
                                     <img class=""
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item04.jpg"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item04_modal.jpg"
                                         alt="椅子装飾">
 
                                     <table>
@@ -158,7 +158,7 @@
                                     <span class="close">&times;</span>
                                     <div class="caption">マットシート</div>
                                     <img class=""
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item05.jpg"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item05_modal.jpg"
                                         alt="椅子装飾">
 
                                     <table>
@@ -192,7 +192,7 @@
                                     <span class="close">&times;</span>
                                     <div class="caption">バックパネル</div>
                                     <img class=""
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item06.jpg"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sub/item06_modal.jpg"
                                         alt="バックパネル">
 
                                     <table>

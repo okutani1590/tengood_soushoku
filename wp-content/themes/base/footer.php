@@ -1,3 +1,4 @@
+</main>
 <div class="sp">
     <div class="sp-contact-nav">
         <a href="<?php echo home_url(''); ?>/estimate" class="">カンタンお見積り</a>
@@ -41,7 +42,7 @@
                 </ul>
                 <ul class="footer__inner--nav">
                     <li class="footer__inner--nav--item">
-                        <a href="" class="btn "> カンタンお見積り </a>
+                        <a href="<?php echo home_url(''); ?>/estimate" class="btn"> カンタンお見積り </a>
                     </li>
                     <li class="footer__inner--nav--item">
                         <a href="<?php echo home_url(''); ?>/contact" class="btn btn--consultation">無料相談はこちら </a>
@@ -50,10 +51,10 @@
             </div>
 
             <div class="footer__inner--sns">
-                <a href="">
+                <a href="https://x.com/tengood0901" target="_blank">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/x_icon.svg" alt="x" />
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/tengood0901/" target="_blank">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/common/facebook_icon.svg"
                         alt="facebook" />
                 </a>
